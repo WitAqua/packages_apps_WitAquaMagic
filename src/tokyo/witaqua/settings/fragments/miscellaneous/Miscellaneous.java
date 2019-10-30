@@ -51,6 +51,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private static final String TAG = "Miscellaneous";
 
     private static final String KEYBOX_DATA_KEY = "keybox_data_setting";
+    private static final String POCKET_JUDGE = "pocket_judge";
 
     private ActivityResultLauncher<Intent> mKeyboxFilePickerLauncher;
     private KeyboxDataPreference mKeyboxDataPreference;
@@ -60,6 +61,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private Context context;
     private Resources resources;
     private ContentResolver resolver;
+    private Preference mPocketJudge;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -85,6 +87,12 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
             }
         }
         });
+
+        mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
+        boolean mPocketJudgeSupported = resources.getBoolean(
+                com.android.internal.R.bool.config_pocketModeSupported);
+        if (!mPocketJudgeSupported)
+            prefScreen.removePreference(mPocketJudge);
     }
 
     @Override
@@ -116,6 +124,11 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
             public List<String> getNonIndexableKeys(Context context) {
                 List<String> keys = super.getNonIndexableKeys(context);
                 final Resources resources = context.getResources();
+
+                boolean mPocketJudgeSupported = resources.getBoolean(
+                            com.android.internal.R.bool.config_pocketModeSupported);
+                if (!mPocketJudgeSupported)
+                    keys.add(POCKET_JUDGE);
                 return keys;
             }
         };

@@ -67,4 +67,11 @@
         android:entryValues="@array/freeform_launch_mode_values"
         android:defaultValue="1"
         android:summary="%s" />
+
+    <!-- Pocket Judge -->
+    <tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference
+        android:key="pocket_judge"
+        android:title="@string/pocket_judge_title"
+        android:summary="@string/pocket_judge_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>
