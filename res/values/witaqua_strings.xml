@@ -117,6 +117,7 @@
 
     <!-- Lock screen -->
     <string name="lock_screen_interface_category">Interface</string>
+    <string name="lock_screen_gestures_category">Gestures</string>
     <string name="lock_screen_charging_stats_title">Charging stats</string>
     <string name="lock_screen_charging_stats_summary">Display current, voltage, wattage, and temperature stats while charging</string>
 
@@ -439,4 +440,12 @@
     <!-- Scroll text on toast -->
     <string name="scroll_toast_text_title">Eneble scroll text on Toast</string>
     <string name="scroll_toast_text_summary">Enable scrolling long text on toast</string>
+
+    <!-- Tap to sleep on status bar -->
+    <string name="statusbar_doubletap_sleep_title">Tap to sleep</string>
+    <string name="statusbar_doubletap_sleep_summary">Double-tap on the status bar to put device asleep</string>
+
+    <!-- Tap to sleep on status bar -->
+    <string name="lockscreen_doubletap_sleep_title">Tap to sleep</string>
+    <string name="lockscreen_doubletap_sleep_summary">Double-tap on the lock screen to put device asleep</string>
 </resources>
