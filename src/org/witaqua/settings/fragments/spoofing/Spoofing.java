@@ -13,6 +13,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.view.View;
 
 import androidx.activity.result.ActivityResultLauncher;
@@ -21,6 +22,7 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.witaqua.KeyProviderManager;
@@ -40,6 +42,8 @@ public class Spoofing extends SettingsPreferenceFragment implements
 
     private static final String TAG = "Spoofing";
 
+    private static final String KEY_PHOTOS_SPOOF = "use_photos_spoof";
+    private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_PI_SPOOF = "persist.sys.pixelprops.pi";
     private static final String SYS_GMS_CERT_SPOOF = "persist.sys.pixelprops.gmscertchain";
     private static final String KEYBOX_DATA_KEY = "keybox_data_setting";
@@ -47,6 +51,7 @@ public class Spoofing extends SettingsPreferenceFragment implements
     private ActivityResultLauncher<Intent> mKeyboxFilePickerLauncher;
     private SystemPropertySwitchPreference mDisableForceIntegrity;
     private KeyboxDataPreference mKeyboxDataPreference;
+    private SwitchPreference mPhotosSpoof;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,6 +62,10 @@ public class Spoofing extends SettingsPreferenceFragment implements
         final ContentResolver resolver = context.getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources resources = context.getResources();
+
+        mPhotosSpoof = (SwitchPreference) prefScreen.findPreference(KEY_PHOTOS_SPOOF);
+        mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
+        mPhotosSpoof.setOnPreferenceChangeListener(this);
 
         mDisableForceIntegrity = findPreference(SYS_GMS_CERT_SPOOF);
         if (mDisableForceIntegrity != null) {
@@ -84,6 +93,11 @@ public class Spoofing extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         final Context context = getContext();
         final ContentResolver resolver = context.getContentResolver();
+        if (preference == mPhotosSpoof) {
+            boolean value = (Boolean) newValue;
+            SystemProperties.set(SYS_PHOTOS_SPOOF, value ? "true" : "false");
+            return true;
+        }
         return false;
     }
 
