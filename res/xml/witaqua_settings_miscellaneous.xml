@@ -55,4 +55,11 @@
         android:title="@string/no_storage_restrict_title"
         android:summary="@string/no_storage_restrict_summary"
         android:defaultValue="false" />
+
+    <!-- Allow application downgrade -->
+    <tokyo.witaqua.settings.preferences.GlobalSettingSwitchPreference
+        android:key="pm_downgrade_allowed"
+        android:title="@string/miscellaneous_app_downgrade_title"
+        android:summary="@string/miscellaneous_app_downgrade_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>

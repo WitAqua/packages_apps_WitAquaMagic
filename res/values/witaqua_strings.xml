@@ -121,6 +121,8 @@
     <string name="disable_camera_sounds_summary">Reboot required. There is not warranty if you encounter any legal issue.</string>
     <string name="ignore_window_secure_title">Ignore window secure flags</string>
     <string name="ignore_window_secure_summary">Fixes black screenshots and recordings, May lead to privacy leaks, Restart apps to apply changes</string>
+    <string name="miscellaneous_app_downgrade_title">Allow application downgrade</string>
+    <string name="miscellaneous_app_downgrade_summary">Allow downgrading system applications, which may result in crashes and data loss</string>
 
     <!-- About -->
     <string name="about_info">We\'re a small team of passionate Android enthusiasts from Japan, and we\'ve come together to create something special. It all started because we love the simplicity of stock Android but felt it could use a little more personality and practicality without all the unnecessary bloat. So, we rolled up our sleeves and got to work, crafting a clean, and responsive.</string>
