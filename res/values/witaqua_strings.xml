@@ -24,7 +24,7 @@
     <string name="about_summary">About WitAqua</string>
     <string name="quick_settings_title">Quick settings</string>
     <string name="quick_settings_summary">Interface, lock screen</string>
-    <string name="themes_title">Themes</string>
+    <string name="themes_title">Themes &amp; UI</string>
     <string name="themes_summary">Monet, fonts, icons</string>
     <string name="miscellaneous_title">Miscellaneous</string>
     <string name="miscellaneous_summary">Special settings (use it own risk!)</string>
@@ -43,7 +43,7 @@
     <string name="quick_settings_require_unlock_title">Secure QS tiles require unlock</string>
     <string name="quick_settings_require_unlock_summary">The following quick settings require the device to be unlocked before you can interact with them:\nAirplane, Battery saver, Bluetooth, Cellular, Data saver, Hotspot, Internet, NFC, Rotation lock, and Wi-Fi</string>
 
-    <!-- Themes -->
+    <!-- Themes & UI -->
     <string name="themes_monet_category">Monet</string>
     <string name="themes_monet_title">Monet settings</string>
     <string name="themes_monet_summary">Customize Android\'s built-in theme engine</string>
@@ -64,6 +64,9 @@
     <string name="themes_screen_off_animation_scale">Scale</string>
     <string name="themes_charging_animation_title">Charging animation</string>
     <string name="themes_charging_animation_summary">Display an animation when the device is plugged in</string>
+    <string name="themes_user_interfaces_category">User Interfaces</string>
+    <string name="themes_floating_rotation_button_title">Floating rotate button</string>
+    <string name="themes_floating_rotation_button_summary">Show a floating rotate button when device is rotated</string>
 
     <!-- Emoji Picker -->
     <string name="themes_emoji_btn_reset_title">Reset</string>
