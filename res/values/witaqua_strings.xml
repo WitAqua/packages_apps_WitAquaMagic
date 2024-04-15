@@ -31,6 +31,16 @@
     <string name="quick_settings_transparency_title">Background transparency</string>
     <string name="quick_settings_transparency_summary">Set transparency level for QS background</string>
 
+    <!-- Themes -->
+    <string name="themes_fonts_category">Fonts</string>
+    <string name="themes_system_font_title">System font</string>
+    <string name="themes_system_font_summary">Set system font style</string>
+    <string name="themes_icons_category">Icons</string>
+    <string name="themes_system_icons_title">System Icons</string>
+    <string name="themes_system_icons_summary">Set system icon style</string>
+    <string name="themes_icon_shape_title">Icon shape</string>
+    <string name="themes_icon_shape_summary">Set system icon shape</string>
+
     <!-- About -->
     <string name="about_info">WitAqua is a Japanese Custom ROM made by Japanese Custom ROM enthusiasts. We provide some addtional features for you!</string>
     <string name="about_website_title">Website</string>
