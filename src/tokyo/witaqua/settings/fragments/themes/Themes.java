@@ -32,11 +32,11 @@ public class Themes extends SettingsPreferenceFragment implements
 
     private static final String TAG = "Themes";
 
-    private static final String KEY_ICONS_CATEGORY = "status_bar_icons_category";
-    private static final String KEY_BLUETOOTH_BATTERY_STATUS = "bluetooth_show_battery";
+    private static final String KEY_ICONS_CATEGORY = "themes_icons_category";
+    private static final String KEY_SIGNAL_ICON = "android.theme.customization.signal_icon";
 
     private PreferenceCategory mIconsCategory;
-    private SystemSettingSwitchPreference mBluetoothBatteryStatus;
+    private Preference mSignalIcon;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,10 +49,10 @@ public class Themes extends SettingsPreferenceFragment implements
         final Resources resources = context.getResources();
 
         mIconsCategory = (PreferenceCategory) findPreference(KEY_ICONS_CATEGORY);
-        mBluetoothBatteryStatus = (SystemSettingSwitchPreference) findPreference(KEY_BLUETOOTH_BATTERY_STATUS);
+        mSignalIcon = (Preference) findPreference(KEY_SIGNAL_ICON);
 
-        if (!DeviceUtils.deviceSupportsBluetooth(context)) {
-            mIconsCategory.removePreference(mBluetoothBatteryStatus);
+        if (!DeviceUtils.deviceSupportsMobileData(context)) {
+            mIconsCategory.removePreference(mSignalIcon);
         }
     }
 
@@ -76,8 +76,8 @@ public class Themes extends SettingsPreferenceFragment implements
                 List<String> keys = super.getNonIndexableKeys(context);
                 final Resources resources = context.getResources();
 
-                if (!DeviceUtils.deviceSupportsBluetooth(context)) {
-                    keys.add(KEY_BLUETOOTH_BATTERY_STATUS);
+                if (!DeviceUtils.deviceSupportsMobileData(context)) {
+                    keys.add(KEY_SIGNAL_ICON);
                 }
                 return keys;
             }

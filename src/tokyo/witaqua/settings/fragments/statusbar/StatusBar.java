@@ -38,6 +38,7 @@ import java.util.List;
 
 import tokyo.witaqua.settings.preferences.SystemSettingListPreference;
 import tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference;
+import tokyo.witaqua.settings.utils.DeviceUtils;
 
 @SearchIndexable
 public class StatusBar extends SettingsPreferenceFragment implements
@@ -45,17 +46,21 @@ public class StatusBar extends SettingsPreferenceFragment implements
 
     private static final String TAG = "StatusBar";
 
+    private static final String KEY_ICONS_CATEGORY = "status_bar_icons_category";
     private static final String KEY_BATTERY_STYLE = "status_bar_battery_style";
     private static final String KEY_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String KEY_BATTERY_TEXT_CHARGING = "status_bar_battery_text_charging";
+    private static final String KEY_BLUETOOTH_BATTERY_STATUS = "bluetooth_show_battery";
 
     private static final int BATTERY_STYLE_PORTRAIT = 0;
     private static final int BATTERY_STYLE_TEXT = 4;
     private static final int BATTERY_STYLE_HIDDEN = 5;
 
+    private PreferenceCategory mIconsCategory;
     private SystemSettingListPreference mBatteryPercent;
     private SystemSettingListPreference mBatteryStyle;
     private SystemSettingSwitchPreference mBatteryTextCharging;
+    private SystemSettingSwitchPreference mBluetoothBatteryStatus;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -67,9 +72,11 @@ public class StatusBar extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources resources = context.getResources();
 
+        mIconsCategory = (PreferenceCategory) findPreference(KEY_ICONS_CATEGORY);
         mBatteryStyle = (SystemSettingListPreference) findPreference(KEY_BATTERY_STYLE);
         mBatteryPercent = (SystemSettingListPreference) findPreference(KEY_BATTERY_PERCENT);
         mBatteryTextCharging = (SystemSettingSwitchPreference) findPreference(KEY_BATTERY_TEXT_CHARGING);
+        mBluetoothBatteryStatus = (SystemSettingSwitchPreference) findPreference(KEY_BLUETOOTH_BATTERY_STATUS);
 
         int batterystyle = Settings.System.getIntForUser(resolver,
                 Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
@@ -84,6 +91,10 @@ public class StatusBar extends SettingsPreferenceFragment implements
 
         mBatteryTextCharging.setEnabled(batterystyle == BATTERY_STYLE_HIDDEN ||
                 (batterystyle != BATTERY_STYLE_TEXT && batterypercent != 2));
+
+        if (!DeviceUtils.deviceSupportsBluetooth(context)) {
+            mIconsCategory.removePreference(mBluetoothBatteryStatus);
+        }
     }
 
     @Override
@@ -122,6 +133,10 @@ public class StatusBar extends SettingsPreferenceFragment implements
             public List<String> getNonIndexableKeys(Context context) {
                 List<String> keys = super.getNonIndexableKeys(context);
                 final Resources resources = context.getResources();
+                
+                if (!DeviceUtils.deviceSupportsBluetooth(context)) {
+                    keys.add(KEY_BLUETOOTH_BATTERY_STATUS);
+                }
                 return keys;
             }
         };
