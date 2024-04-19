@@ -51,6 +51,11 @@
     <string name="themes_emoji_btn_reset_title">Reset</string>
     <string name="themes_emoji_select_message">Applied successfully. Reboot required to use new emoji.</string>
 
+    <!-- Lock screen -->
+    <string name="lock_screen_interface_category">Interface</string>
+    <string name="lock_screen_charging_stats_title">Charging stats</string>
+    <string name="lock_screen_charging_stats_summary">Display current, voltage, wattage, and temperature stats while charging</string>
+
     <!-- Miscellaneous -->
     <string name="spoofing_pif_toggle_title">Disable Play Integrity fix spoofing</string>
     <string name="spoofing_pif_toggle_summary">Disable the ROM\'s built-in Play Integrity fix values. Please turn on when you use third party modules. (E.g. TrickyStore)</string>
