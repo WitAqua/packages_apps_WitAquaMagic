@@ -172,6 +172,13 @@
     <string name="status_bar_battery_percent_text_next_left">Next to the icon (left)</string> 
     <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
     <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
+    <string name="status_bar_privacy_indicators_category">Privacy indicators</string>
+    <string name="status_bar_mic_camera_privacy_indicator_title">Microphone &amp; camera</string>
+    <string name="status_bar_mic_camera_privacy_indicator_summary">Display an indicator when an app accesses the microphone or camera</string>
+    <string name="status_bar_location_privacy_indicator_title">Location</string>
+    <string name="status_bar_location_privacy_indicator_summary">Display an indicator when an app accesses your location</string>
+    <string name="status_bar_projection_privacy_indicator_title">Screen projection</string>
+    <string name="status_bar_projection_privacy_indicator_summary">Display an indicator when the screen is being projected</string>
 
     <!-- Status bar/Clock & date -->
     <string name="status_bar_clock_position_title">Clock position</string>
