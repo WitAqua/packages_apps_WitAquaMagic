@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2019-2024 Evolution X
+     Copyright (C) 2025 WitAqua
      SPDX-License-Identifier: Apache-2.0
 -->
 
@@ -9,4 +9,15 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/status_bar_title">
 
+    <PreferenceCategory
+        android:key="status_bar_icons_category"
+        android:title="@string/status_bar_icons_category">
+
+        <!-- Colored icons -->
+        <tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference
+            android:key="statusbar_colored_icons"
+            android:title="@string/status_bar_colored_icons_title"
+            android:summary="@string/status_bar_colored_icons_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
 </PreferenceScreen>

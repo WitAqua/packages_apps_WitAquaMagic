@@ -58,6 +58,11 @@
     <string name="lock_screen_charging_stats_title">Charging stats</string>
     <string name="lock_screen_charging_stats_summary">Display current, voltage, wattage, and temperature stats while charging</string>
 
+    <!-- Status bar -->
+    <string name="status_bar_icons_category">Icons</string>
+    <string name="status_bar_colored_icons_title">Colored icons</string>
+    <string name="status_bar_colored_icons_summary">Use launcher icons for app notifications</string>
+
     <!-- Miscellaneous -->
     <string name="spoofing_pif_toggle_title">Disable Play Integrity fix spoofing</string>
     <string name="spoofing_pif_toggle_summary">Disable the ROM\'s built-in Play Integrity fix values. Please turn on when you use third party modules. (E.g. TrickyStore)</string>
