@@ -107,6 +107,11 @@
     <string name="quick_settings_secure_lock_screen_title">Hide on secure lock screen</string>
     <string name="quick_settings_secure_lock_screen_summary">Hide all quick settings in the notification shade while the device is locked</string>
 
+    <!-- Power menu -->
+    <string name="power_menu_lock_screen_category">Lock screen</string>
+    <string name="power_menu_lock_screen_secure_title">Show on secure lock screen</string>
+    <string name="power_menu_lock_screen_secure_summary">Show the power menu while the device is locked</string>
+
     <!-- Miscellaneous -->
     <string name="spoofing_pif_toggle_title">Disable Play Integrity fix spoofing</string>
     <string name="spoofing_pif_toggle_summary">Disable the ROM\'s built-in Play Integrity fix values. Please turn on when you use third party modules. (E.g. TrickyStore)</string>
