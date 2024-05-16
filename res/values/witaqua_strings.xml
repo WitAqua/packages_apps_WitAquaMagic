@@ -40,6 +40,8 @@
     <!-- Quick Settings -->
     <string name="quick_settings_transparency_title">Background transparency</string>
     <string name="quick_settings_transparency_summary">Set transparency level for QS background</string>
+    <string name="quick_settings_require_unlock_title">Secure QS tiles require unlock</string>
+    <string name="quick_settings_require_unlock_summary">The following quick settings require the device to be unlocked before you can interact with them:\nAirplane, Battery saver, Bluetooth, Cellular, Data saver, Hotspot, Internet, NFC, Rotation lock, and Wi-Fi</string>
 
     <!-- Themes -->
     <string name="themes_monet_category">Monet</string>
