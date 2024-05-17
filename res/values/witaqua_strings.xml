@@ -120,6 +120,8 @@
     <string name="status_bar_tuner_summary">Choose which system icons can be shown</string>
     <string name="status_bar_clock_and_date_title">Clock &amp; date</string>
     <string name="status_bar_clock_and_date_summary">Customize clock &amp; date</string>
+    <string name="status_bar_clock_chip_title">Background chip</string>
+    <string name="status_bar_clock_chip_summary">Display accented chip behind clock</string>
 
     <!-- Status bar/Clock & date -->
     <string name="status_bar_clock_position_title">Clock position</string>

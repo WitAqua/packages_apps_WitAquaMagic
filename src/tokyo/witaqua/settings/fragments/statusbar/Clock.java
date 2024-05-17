@@ -46,9 +46,9 @@ import java.util.List;
 import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;
 
-import tokyo.wiitaqua.settings.preferences.CustomSeekBarPreference;
-import tokyo.wiitaqua.settings.preferences.SystemSettingListPreference;
-import tokyo.wiitaqua.settings.utils.DeviceUtils;
+import tokyo.witaqua.settings.preferences.CustomSeekBarPreference;
+import tokyo.witaqua.settings.preferences.SystemSettingListPreference;
+import tokyo.witaqua.settings.utils.DeviceUtils;
 
 @SearchIndexable
 public class Clock extends SettingsPreferenceFragment implements
@@ -233,7 +233,7 @@ public class Clock extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.EVOLVER;
+        return MetricsEvent.WITAQUA_SETTINGS;
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
