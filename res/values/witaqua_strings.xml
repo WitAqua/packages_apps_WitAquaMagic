@@ -108,6 +108,8 @@
     <string name="status_bar_notif_count_summary">Display the number of unread notifications on each app icon</string>
     <string name="status_bar_bluetooth_battery_title">Bluetooth battery status</string>
     <string name="status_bar_bluetooth_battery_summary">Display battery status for the connected Bluetooth device, if available</string>
+    <string name="status_bar_wifi_standard_icon_title">Wi-Fi standard</string>
+    <string name="status_bar_wifi_standard_icon_summary">Display Wi-Fi standard next the Wi-Fi icon</string>
 
     <!-- Quick settings -->
     <string name="quick_settings_lock_screen_category">Lock screen</string>
