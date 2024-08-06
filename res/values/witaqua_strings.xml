@@ -57,4 +57,8 @@
     <string name="edit_device_name_title">Edit Device Name</string>
     <string name="maintainer_name" translatable="false"></string>
     <string name="ok">OK</string>
+
+    <!-- Google Play Integrity Spoof -->
+    <string name="pi_spoof_title">Google Play Integrity spoof</string>
+    <string name="pi_spoof_summary">Spoof your device as different model for Google Play Integrity</string>
 </resources>
