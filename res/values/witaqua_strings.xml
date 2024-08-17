@@ -11,6 +11,8 @@
     <!-- Categories -->
     <string name="about_title">About</string>
     <string name="about_summary">About WitAqua</string>
+    <string name="spoofing_title">Spoofing</string>
+    <string name="spoofing_summary">Device spoofing options</string>
 
     <!-- About -->
     <string name="about_info">WitAqua is a custom Android ROM developed by Japanese Android enthusiasts. The primary goal of this ROM is to deliver a stock Android experience, free from unnecessary bloatware. It offers a clean, responsive system with a streamlined interface. While the ROM maintains the core features and simplicity of stock Android, it also includes several useful, carefully selected enhancements and additional features that improve usability and customization.</string>
