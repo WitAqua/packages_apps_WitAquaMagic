@@ -11,6 +11,8 @@
     <!-- Categories -->
     <string name="about_title">About</string>
     <string name="about_summary">About WitAqua</string>
+    <string name="miscellaneous_title">Miscellaneous</string>
+    <string name="miscellaneous_summary">Developer options, spoofing</string>
     <string name="spoofing_title">Spoofing</string>
     <string name="spoofing_summary">Device spoofing options</string>
 

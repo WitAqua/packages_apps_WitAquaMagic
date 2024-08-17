@@ -17,6 +17,14 @@
         android:icon="@drawable/ic_spoofing"
         android:fragment="org.witaqua.settings.fragments.spoofing.Spoofing" />
 
+    <!-- Miscellaneous -->
+    <Preference
+        android:key="miscellaneous"
+        android:title="@string/miscellaneous_title"
+        android:summary="@string/miscellaneous_summary"
+        android:icon="@drawable/ic_miscellaneous"
+        android:fragment="org.witaqua.settings.fragments.miscellaneous.Miscellaneous" />
+
     <!-- About -->
     <Preference
         android:key="about"
