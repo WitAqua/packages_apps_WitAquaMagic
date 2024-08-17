@@ -9,6 +9,14 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/witaqua_dashboard_title">
 
+    <!-- Spoofing -->
+    <Preference
+        android:key="spoofing"
+        android:title="@string/spoofing_title"
+        android:summary="@string/spoofing_summary"
+        android:icon="@drawable/ic_spoofing"
+        android:fragment="org.witaqua.settings.fragments.spoofing.Spoofing" />
+
     <!-- About -->
     <Preference
         android:key="about"
