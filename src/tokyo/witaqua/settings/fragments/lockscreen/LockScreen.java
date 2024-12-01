@@ -25,6 +25,7 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -42,8 +43,10 @@ public class LockScreen extends SettingsPreferenceFragment implements
     private static final String TAG = "LockScreen";
 
     private static final String KEY_WEATHER = "lockscreen_weather_enabled";
+    private static final String KEY_SMARTSPACE = "lockscreen_smartspace_enabled";
 
     private Preference mWeather;
+    private SwitchPreferenceCompat mSmartspace;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,6 +58,9 @@ public class LockScreen extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources resources = context.getResources();
 
+        mSmartspace = (SwitchPreferenceCompat) findPreference(KEY_SMARTSPACE);
+        mSmartspace.setOnPreferenceChangeListener(this);
+
         mWeather = (Preference) findPreference(KEY_WEATHER);
         updateWeatherSettings();
     }
@@ -63,15 +69,20 @@ public class LockScreen extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         final Context context = getContext();
         final ContentResolver resolver = context.getContentResolver();
+        if (preference == mSmartspace) {
+            mSmartspace.setChecked((Boolean)newValue);
+            updateWeatherSettings();
+            return true;
+        }
         return false;
     }
 
     private void updateWeatherSettings() {
-        if (mWeather == null) return;
+        if (mWeather == null || mSmartspace == null) return;
 
         boolean weatherEnabled = OmniJawsClient.get().isOmniJawsEnabled(getContext());
-        mWeather.setEnabled(weatherEnabled);
-        mWeather.setSummary(weatherEnabled ? R.string.lockscreen_weather_summary :
+        mWeather.setEnabled(!mSmartspace.isChecked() && weatherEnabled);
+        mWeather.setSummary(!mSmartspace.isChecked() && weatherEnabled ? R.string.lockscreen_weather_summary :
             R.string.lockscreen_weather_enabled_info);
     }
 
