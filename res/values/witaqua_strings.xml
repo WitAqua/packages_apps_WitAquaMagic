@@ -24,18 +24,22 @@
     <string name="about_summary">About WitAqua</string>
 
     <!-- About -->
-    <string name="about_info">WitAqua is a custom rom made by Japanese custom rom enthusiasts. We provide some addtional features for you!</string>
+    <string name="about_info">WitAqua is a Japanese Custom ROM made by Japanese Custom ROM enthusiasts. We provide some addtional features for you!</string>
     <string name="about_website_title">Website</string>
     <string name="about_website_summary">Feel free to drop by our website</string>
     <string name="about_github_title" translatable="false">GitHub</string>
     <string name="about_github_summary">Check out our GitHub</string>
+    <string name="about_x_title" translatable="false">X</string>
+    <string name="about_x_summary">Check out our X</string>
     <string name="about_contributors_title">Contributors</string>
     <string name="about_contributor_1_title" translatable="false">Toufu</string>
     <string name="about_contributor_1_summary" translatable="false">Founder/Lead-Developer</string>
     <string name="about_contributor_2_title" translatable="false">Maitani-Sakura</string>
-    <string name="about_contributor_2_summary" translatable="false">Co-Developer</string>
+    <string name="about_contributor_2_summary" translatable="false">Co-Founder/Developer</string>
     <string name="about_contributor_3_title" translatable="false">Soralis</string>
-    <string name="about_contributor_3_summary" translatable="false">Co-Developer</string>
+    <string name="about_contributor_3_summary" translatable="false">Developer</string>
     <string name="about_contributor_4_title" translatable="false">Satokun2668</string>
     <string name="about_contributor_4_summary" translatable="false">Designer</string>
+    <string name="about_contributor_5_title" translatable="false">neroices</string>
+    <string name="about_contributor_5_summary" translatable="false">Developer</string>
 </resources>

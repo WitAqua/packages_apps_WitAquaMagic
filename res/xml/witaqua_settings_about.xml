@@ -48,6 +48,15 @@
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/WitAqua" />
     </Preference>
+    <!-- X -->
+    <Preference
+        android:title="@string/about_x_title"
+        android:icon="@drawable/ic_x"
+        android:summary="@string/about_x_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://x.com/WitAquaROM" />
+    </Preference>
 
     <PreferenceCategory
         android:key="contributors"
@@ -87,5 +96,13 @@
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="https://x.com/stkn2668" />
+        </Preference>
+    <!-- Contributor 5 -->
+        <Preference
+            android:title="@string/about_contributor_5_title"
+            android:summary="@string/about_contributor_5_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/neroices" />
         </Preference>
 </PreferenceScreen>
