@@ -9,4 +9,15 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/quick_settings_title">
 
+    <!-- QS Transparency -->
+    <tokyo.witaqua.settings.preferences.SystemSettingSeekBarPreference
+        android:key="qs_transparency"
+        android:title="@string/quick_settings_transparency_title"
+        android:summary="@string/quick_settings_transparency_summary"
+        android:defaultValue="100"
+        settings:interval="1"
+        settings:units="%"
+        android:max="100"
+        android:min="1" />
+
 </PreferenceScreen>
