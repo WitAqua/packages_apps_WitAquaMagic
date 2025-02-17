@@ -22,6 +22,8 @@
     <!-- Categories -->
     <string name="about_title">About</string>
     <string name="about_summary">About WitAqua</string>
+    <string name="quick_settings_title">Quick settings</string>
+    <string name="quick_settings_summary">Interface, lock screen</string>
 
     <!-- About -->
     <string name="about_info">WitAqua is a Japanese Custom ROM made by Japanese Custom ROM enthusiasts. We provide some addtional features for you!</string>
