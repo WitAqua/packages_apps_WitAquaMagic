@@ -24,6 +24,8 @@
     <string name="about_summary">About WitAqua</string>
     <string name="quick_settings_title">Quick settings</string>
     <string name="quick_settings_summary">Interface, lock screen</string>
+    <string name="themes_title">Themes</string>
+    <string name="themes_summary">Monet, fonts, icons</string>
 
     <!-- Quick Settings -->
     <string name="quick_settings_transparency_title">Background transparency</string>

@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2017-2023 The LineageOS project
  * SPDX-License-Identifier: Apache-2.0
  */
-package org.evolution.settings.utils;
+package tokyo.witaqua.settings.utils;
 
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL;

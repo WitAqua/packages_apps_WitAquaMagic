@@ -19,6 +19,14 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/witaqua_dashboard_title">
 
+    <!-- Themes -->
+    <Preference
+        android:key="themes"
+        android:title="@string/themes_title"
+        android:summary="@string/themes_summary"
+        android:icon="@drawable/ic_themes"
+        android:fragment="tokyo.witaqua.settings.fragments.themes.Themes" />
+
     <!-- Quick Settings -->
     <Preference
         android:key="quick_settings"
