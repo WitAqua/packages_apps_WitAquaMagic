@@ -32,9 +32,9 @@
     <string name="quick_settings_transparency_summary">Set transparency level for QS background</string>
 
     <!-- About -->
-    <string name="about_info">WitAqua is a Japanese Custom ROM made by Japanese Custom ROM enthusiasts. We provide some addtional features for you!</string>
+    <string name="about_info">We're a small team of passionate Android enthusiasts from Japan, and we've come together to create something special. It all started because we love the simplicity of stock Android but felt it could use a little more personality and practicality without all the unnecessary bloat. So, we rolled up our sleeves and got to work, crafting a clean, and responsive.</string>
     <string name="about_website_title">Website</string>
-    <string name="about_website_summary">Feel free to drop by our website</string>
+    <string name="about_website_summary">Check out our website</string>
     <string name="about_github_title" translatable="false">GitHub</string>
     <string name="about_github_summary">Check out our GitHub</string>
     <string name="about_x_title" translatable="false">X</string>
@@ -48,7 +48,7 @@
     <string name="about_contributor_3_summary" translatable="false">Developer</string>
     <string name="about_contributor_4_title" translatable="false">Satokun2668</string>
     <string name="about_contributor_4_summary" translatable="false">Designer</string>
-    <string name="about_contributor_5_title" translatable="false">neroices</string>
+    <string name="about_contributor_5_title" translatable="false">Neroices</string>
     <string name="about_contributor_5_summary" translatable="false">Developer</string>
 
     <!-- Color Picker -->
