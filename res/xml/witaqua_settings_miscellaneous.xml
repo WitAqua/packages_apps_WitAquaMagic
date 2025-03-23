@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2025 WitAqua
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/miscellaneous_title">
+
+    <!-- Play Integrity Fix -->
+    <tokyo.witaqua.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pihooks.disable.gms_props"
+        android:title="@string/spoofing_pif_toggle_title"
+        android:summary="@string/spoofing_pif_toggle_summary"
+        android:defaultValue="false" />
+
+    <!-- Play Integrity Fix - Key Attestation block disable -->
+    <tokyo.witaqua.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pihooks.disable.gms_key_attestation_block"
+        android:title="@string/spoofing_pif_key_attestation_toggle_title"
+        android:summary="@string/spoofing_pif_key_attestation_toggle_summary"
+        android:defaultValue="false" />
+
+    <!-- Play Integrity Fix - JSON utils -->
+    <Preference
+        android:key="pif_json_manage_preference"
+        android:title="@string/spoofing_pif_manage_title" />
+
+    <!-- Google Photos -->
+    <tokyo.witaqua.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pihooks.enable.photos_spoof"
+        android:title="@string/spoofing_photos_title"
+        android:summary="@string/spoofing_photos_summary"
+        android:defaultValue="false" />
+
+    <!-- Force disable camera sounds -->
+    <tokyo.witaqua.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.camera.sound.disable"
+        android:title="@string/disable_camera_sounds_title"
+        android:summary="@string/disable_camera_sounds_summary"
+        android:defaultValue="false" />
+
+    <!-- Ignore window secure flags -->
+    <tokyo.witaqua.settings.preferences.GlobalSettingSwitchPreference
+        android:key="window_ignore_secure"
+        android:title="@string/ignore_window_secure_title"
+        android:summary="@string/ignore_window_secure_summary"
+        android:defaultValue="false" />
+
+</PreferenceScreen>

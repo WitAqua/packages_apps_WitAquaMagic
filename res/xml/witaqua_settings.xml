@@ -35,6 +35,14 @@
         android:icon="@drawable/ic_quick_settings"
         android:fragment="tokyo.witaqua.settings.fragments.quicksettings.QuickSettings" />
 
+    <!-- Miscellaneous -->
+    <Preference
+        android:key="miscellaneous"
+        android:title="@string/miscellaneous_title"
+        android:summary="@string/miscellaneous_summary"
+        android:icon="@drawable/ic_miscellaneous"
+        android:fragment="tokyo.witaqua.settings.fragments.miscellaneous.Miscellaneous" />
+
     <!-- About -->
     <Preference
         android:key="about"

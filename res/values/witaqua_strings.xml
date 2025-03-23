@@ -26,6 +26,8 @@
     <string name="quick_settings_summary">Interface, lock screen</string>
     <string name="themes_title">Themes</string>
     <string name="themes_summary">Monet, fonts, icons</string>
+    <string name="miscellaneous_title">Miscellaneous</string>
+    <string name="miscellaneous_summary">Special settings (use it own risk!)</string>
 
     <!-- Quick Settings -->
     <string name="quick_settings_transparency_title">Background transparency</string>
@@ -40,6 +42,23 @@
     <string name="themes_system_icons_summary">Set system icon style</string>
     <string name="themes_icon_shape_title">Icon shape</string>
     <string name="themes_icon_shape_summary">Set system icon shape</string>
+
+    <!-- Miscellaneous -->
+    <string name="spoofing_pif_toggle_title">Disable Play Integrity fix spoofing</string>
+    <string name="spoofing_pif_toggle_summary">Disable the ROM\'s built-in Play Integrity fix values. Please turn on when you use third party modules. (E.g. TrickyStore)</string>
+    <string name="spoofing_pif_key_attestation_toggle_title">Disable Key Attestation</string>
+    <string name="spoofing_pif_key_attestation_toggle_summary">Disable the ROM\'s built-in key attestation features</string>
+    <string name="spoofing_pif_manage_title">Manage PIF spoofing values</string>
+    <string name="spoofing_pif_json_download_title">Download the general PIF JSON</string>
+    <string name="spoofing_pif_json_download_message">Downloading latest pif.json</string>
+    <string name="spoofing_pif_json_select_title">Select PIF JSON File and Apply</string>
+    <string name="spoofing_pif_json_select_success">Successfully updated fingerprints. Now reboot to take effect.</string>
+    <string name="spoofing_photos_title">Google Photos spoof</string>
+    <string name="spoofing_photos_summary">Spoof the Google Photos app as a Pixel XL</string>
+    <string name="disable_camera_sounds_title">Force disable camera sounds</string>
+    <string name="disable_camera_sounds_summary">Reboot required. There is not warranty if you encounter any legal issue.</string>
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">Fixes black screenshots and recordings, May lead to privacy leaks, Restart apps to apply changes</string>
 
     <!-- About -->
     <string name="about_info">We\'re a small team of passionate Android enthusiasts from Japan, and we\'ve come together to create something special. It all started because we love the simplicity of stock Android but felt it could use a little more personality and practicality without all the unnecessary bloat. So, we rolled up our sleeves and got to work, crafting a clean, and responsive.</string>
