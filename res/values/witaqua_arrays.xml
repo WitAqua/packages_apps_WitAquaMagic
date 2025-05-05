@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2025 WitAqua
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Emoji preset line-up -->
+    <string-array name="emoji_preset_filename" translatable="false">
+        <item>NotoColorEmojiOld.ttf</item>
+        <item>iOS.ttf</item>
+        <item>ColorUniEmoji.ttf</item>
+    </string-array>
+</resources>

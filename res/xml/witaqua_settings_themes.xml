@@ -19,6 +19,13 @@
             android:title="@string/themes_system_font_title"
             android:summary="@string/themes_system_font_summary"
             android:fragment="tokyo.witaqua.settings.fragments.themes.Fonts"/>
+
+        <!-- Emoji -->
+        <Preference
+            android:key="android.theme.customization.emoji"
+            android:title="@string/themes_emoji_title"
+            android:summary="@string/themes_emoji_summary"
+            android:fragment="tokyo.witaqua.settings.fragments.themes.EmojiPicker"/>
     </PreferenceCategory>
 
     <PreferenceCategory

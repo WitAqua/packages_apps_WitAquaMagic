@@ -37,11 +37,17 @@
     <string name="themes_fonts_category">Fonts</string>
     <string name="themes_system_font_title">System font</string>
     <string name="themes_system_font_summary">Set system font style</string>
+    <string name="themes_emoji_title">Emoji</string>
+    <string name="themes_emoji_summary">Set emoji style</string>
     <string name="themes_icons_category">Icons</string>
     <string name="themes_system_icons_title">System Icons</string>
     <string name="themes_system_icons_summary">Set system icon style</string>
     <string name="themes_icon_shape_title">Icon shape</string>
     <string name="themes_icon_shape_summary">Set system icon shape</string>
+
+    <!-- Emoji Picker -->
+    <string name="themes_emoji_btn_reset_title">Reset</string>
+    <string name="themes_emoji_select_message">Applied successfully. Reboot required to use new emoji.</string>
 
     <!-- Miscellaneous -->
     <string name="spoofing_pif_toggle_title">Disable Play Integrity fix spoofing</string>
