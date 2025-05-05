@@ -10,7 +10,7 @@
     android:title="@string/quick_settings_title">
 
     <!-- QS Transparency -->
-    <tokyo.witaqua.settings.preferences.SystemSettingSeekBarPreference
+    <!--<tokyo.witaqua.settings.preferences.SystemSettingSeekBarPreference
         android:key="qs_transparency"
         android:title="@string/quick_settings_transparency_title"
         android:summary="@string/quick_settings_transparency_summary"
@@ -18,7 +18,7 @@
         settings:interval="1"
         settings:units="%"
         android:max="100"
-        android:min="1" />
+        android:min="1" />-->
 
     <PreferenceCategory
         android:key="quick_settings_lock_screen_category"
