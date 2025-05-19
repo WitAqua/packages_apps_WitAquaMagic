@@ -27,6 +27,14 @@
         android:icon="@drawable/ic_themes"
         android:fragment="tokyo.witaqua.settings.fragments.themes.Themes" />
 
+    <!-- Lock screen -->
+    <Preference
+        android:key="lock_screen"
+        android:title="@string/lock_screen_title"
+        android:summary="@string/lock_screen_summary"
+        android:icon="@drawable/ic_lock_screen"
+        android:fragment="tokyo.witaqua.settings.fragments.lockscreen.LockScreen" />
+
     <!-- Quick Settings -->
     <Preference
         android:key="quick_settings"

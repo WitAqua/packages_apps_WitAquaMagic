@@ -28,6 +28,8 @@
     <string name="themes_summary">Monet, fonts, icons</string>
     <string name="miscellaneous_title">Miscellaneous</string>
     <string name="miscellaneous_summary">Special settings (use it own risk!)</string>
+    <string name="lock_screen_title">Lock screen</string>
+    <string name="lock_screen_summary">Interface, miscellaneous</string>
 
     <!-- Quick Settings -->
     <string name="quick_settings_transparency_title">Background transparency</string>
