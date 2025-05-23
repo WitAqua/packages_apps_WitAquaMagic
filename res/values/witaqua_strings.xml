@@ -30,6 +30,8 @@
     <string name="miscellaneous_summary">Special settings (use it own risk!)</string>
     <string name="lock_screen_title">Lock screen</string>
     <string name="lock_screen_summary">Interface, miscellaneous</string>
+    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_summary">Gestures, Icons, privacy indicators</string>
 
     <!-- Quick Settings -->
     <string name="quick_settings_transparency_title">Background transparency</string>

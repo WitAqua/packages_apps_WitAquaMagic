@@ -35,6 +35,14 @@
         android:icon="@drawable/ic_lock_screen"
         android:fragment="tokyo.witaqua.settings.fragments.lockscreen.LockScreen" />
 
+    <!-- Status bar -->
+    <Preference
+        android:key="status_bar"
+        android:title="@string/status_bar_title"
+        android:summary="@string/status_bar_summary"
+        android:icon="@drawable/ic_status_bar"
+        android:fragment="tokyo.witaqua.settings.fragments.statusbar.StatusBar" />
+
     <!-- Quick Settings -->
     <Preference
         android:key="quick_settings"
