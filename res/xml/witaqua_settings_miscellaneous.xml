@@ -49,4 +49,10 @@
         android:summary="@string/ignore_window_secure_summary"
         android:defaultValue="false" />
 
+    <!-- No storage restrict -->
+    <tokyo.witaqua.settings.preferences.GlobalSettingSwitchPreference
+        android:key="no_storage_restrict"
+        android:title="@string/no_storage_restrict_title"
+        android:summary="@string/no_storage_restrict_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>
