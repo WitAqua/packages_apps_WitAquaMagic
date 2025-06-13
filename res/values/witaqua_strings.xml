@@ -32,6 +32,8 @@
     <string name="lock_screen_summary">Interface, miscellaneous</string>
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_summary">Gestures, Icons, privacy indicators</string>
+    <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_summary">Actions, lock screen</string>
 
     <!-- Quick Settings -->
     <string name="quick_settings_transparency_title">Background transparency</string>
