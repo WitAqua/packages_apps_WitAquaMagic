@@ -15,4 +15,11 @@
         android:title="@string/pi_spoof_title"
         android:summary="@string/pi_spoof_summary"
         android:defaultValue="true" />
+
+    <!-- Keybox Data -->
+    <org.witaqua.settings.preferences.KeyboxDataPreference
+        android:key="keybox_data_setting"
+        android:title="@string/keybox_data_title"
+        android:summary="@string/keybox_data_summary"
+        android:defaultValue=""/>
 </PreferenceScreen>
