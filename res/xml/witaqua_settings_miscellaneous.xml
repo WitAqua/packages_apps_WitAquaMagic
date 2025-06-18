@@ -28,6 +28,13 @@
         android:key="pif_json_manage_preference"
         android:title="@string/spoofing_pif_manage_title" />
 
+    <!-- Keybox Data -->
+    <tokyo.witaqua.settings.preferences.KeyboxDataPreference
+        android:key="keybox_data_setting"
+        android:title="@string/keybox_data_title"
+        android:summary="@string/keybox_data_summary"
+        android:defaultValue=""/>
+
     <!-- Google Photos -->
     <tokyo.witaqua.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pihooks.enable.photos_spoof"

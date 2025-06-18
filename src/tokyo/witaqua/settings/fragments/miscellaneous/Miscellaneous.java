@@ -19,8 +19,11 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.SystemProperties;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
@@ -39,6 +42,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.Iterator;
 import java.util.List;
 
+import tokyo.witaqua.settings.preferences.KeyboxDataPreference;
+
 @SearchIndexable
 public class Miscellaneous extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -46,7 +51,10 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private static final String TAG = "Miscellaneous";
 
     private static final String KEY_PIF_JSON_MANAGE_PREFERENCE = "pif_json_manage_preference";
+    private static final String KEYBOX_DATA_KEY = "keybox_data_setting";
 
+    private ActivityResultLauncher<Intent> mKeyboxFilePickerLauncher;
+    private KeyboxDataPreference mKeyboxDataPreference;
     private Preference mPifJsonManagePreference;
 
     private Handler mHandler;
@@ -69,6 +77,18 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         mHandler = new Handler();
 
         mPifJsonManagePreference = findPreference(KEY_PIF_JSON_MANAGE_PREFERENCE);
+
+        mKeyboxFilePickerLauncher = registerForActivityResult(
+        new ActivityResultContracts.StartActivityForResult(),
+        result -> {
+            if (result.getResultCode() == Activity.RESULT_OK && result.getData() != null) {
+            Uri uri = result.getData().getData();
+            Preference pref = findPreference(KEYBOX_DATA_KEY);
+            if (pref instanceof KeyboxDataPreference) {
+                ((KeyboxDataPreference) pref).handleFileSelected(uri);
+            }
+        }
+        });
     }
 
     @Override
@@ -120,6 +140,15 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
         intent.setType("application/json");
         startActivityForResult(intent, 10001);
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        mKeyboxDataPreference = findPreference(KEYBOX_DATA_KEY);
+        if (mKeyboxDataPreference != null) {
+            mKeyboxDataPreference.setFilePickerLauncher(mKeyboxFilePickerLauncher);
+        }
     }
 
     @Override
