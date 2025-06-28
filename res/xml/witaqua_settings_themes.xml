@@ -26,18 +26,19 @@
         android:title="@string/themes_fonts_category">
 
         <!-- System font -->
-        <Preference
+        <!--<Preference
             android:key="android.theme.customization.fonts"
             android:title="@string/themes_system_font_title"
             android:summary="@string/themes_system_font_summary"
-            android:fragment="tokyo.witaqua.settings.fragments.themes.Fonts"/>
+            android:fragment="tokyo.witaqua.settings.fragments.themes.Fonts"/>-->
+
 
         <!-- Emoji -->
-        <Preference
+        <!--<Preference
             android:key="android.theme.customization.emoji"
             android:title="@string/themes_emoji_title"
             android:summary="@string/themes_emoji_summary"
-            android:fragment="tokyo.witaqua.settings.fragments.themes.EmojiPicker"/>
+            android:fragment="tokyo.witaqua.settings.fragments.themes.EmojiPicker"/>-->
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -45,18 +46,18 @@
         android:title="@string/themes_icons_category">
 
         <!-- System icons -->
-        <Preference
+        <!--<Preference
             android:key="android.theme.customization.icon_pack"
             android:title="@string/themes_system_icons_title"
             android:summary="@string/themes_system_icons_summary"
-            android:fragment="tokyo.witaqua.settings.fragments.themes.SystemIcons"/>
+            android:fragment="tokyo.witaqua.settings.fragments.themes.SystemIcons"/>-->
 
         <!-- Icon shape -->
-        <Preference
+        <!--<Preference
             android:key="android.theme.customization.adaptive_icon_shape"
             android:title="@string/themes_icon_shape_title"
             android:summary="@string/themes_icon_shape_summary"
-            android:fragment="tokyo.witaqua.settings.fragments.themes.IconShapes"/>
+            android:fragment="tokyo.witaqua.settings.fragments.themes.IconShapes"/>-->
     </PreferenceCategory>
 
     <PreferenceCategory

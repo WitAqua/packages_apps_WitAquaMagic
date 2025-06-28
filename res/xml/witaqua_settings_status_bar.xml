@@ -14,18 +14,18 @@
         android:title="@string/status_bar_icons_category">
 
         <!-- Colored icons -->
-        <tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference
+        <!--<tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference
             android:key="statusbar_colored_icons"
             android:title="@string/status_bar_colored_icons_title"
             android:summary="@string/status_bar_colored_icons_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false" />-->
 
         <!-- Notification counter -->
-        <tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference
+        <!--<tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference
             android:key="statusbar_notif_count"
             android:title="@string/status_bar_notif_count_title"
             android:summary="@string/status_bar_notif_count_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false" /> -->
 
         <!-- Bluetooth battery status -->
         <tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference

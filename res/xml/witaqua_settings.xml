@@ -35,7 +35,7 @@
         android:icon="@drawable/ic_lock_screen"
         android:fragment="tokyo.witaqua.settings.fragments.lockscreen.LockScreen" />
 
-    <!-- Lock screen -->
+    <!-- Power Menu -->
     <Preference
         android:key="power_menu"
         android:title="@string/power_menu_title"
