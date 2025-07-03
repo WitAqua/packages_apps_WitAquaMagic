@@ -136,10 +136,6 @@
     <string name="spoofing_pif_key_attestation_toggle_title">Disable Key Attestation</string>
     <string name="spoofing_pif_key_attestation_toggle_summary">Disable the ROM\'s built-in key attestation features</string>
     <string name="spoofing_pif_manage_title">Manage PIF spoofing values</string>
-    <string name="spoofing_pif_json_download_title">Download the general PIF JSON</string>
-    <string name="spoofing_pif_json_download_message">Downloading latest pif.json</string>
-    <string name="spoofing_pif_json_select_title">Select PIF JSON File and Apply</string>
-    <string name="spoofing_pif_json_select_success">Successfully updated fingerprints. Now reboot to take effect.</string>
     <string name="spoofing_photos_title">Google Photos spoof</string>
     <string name="spoofing_photos_summary">Spoof the Google Photos app as a Pixel XL</string>
     <string name="disable_camera_sounds_title">Force disable camera sounds</string>

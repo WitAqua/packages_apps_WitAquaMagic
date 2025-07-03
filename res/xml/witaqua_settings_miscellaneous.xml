@@ -23,11 +23,6 @@
         android:summary="@string/spoofing_pif_key_attestation_toggle_summary"
         android:defaultValue="false" />
 
-    <!-- Play Integrity Fix - JSON utils -->
-    <Preference
-        android:key="pif_json_manage_preference"
-        android:title="@string/spoofing_pif_manage_title" />
-
     <!-- Keybox Data -->
     <tokyo.witaqua.settings.preferences.KeyboxDataPreference
         android:key="keybox_data_setting"

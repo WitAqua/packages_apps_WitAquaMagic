@@ -50,12 +50,10 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     private static final String TAG = "Miscellaneous";
 
-    private static final String KEY_PIF_JSON_MANAGE_PREFERENCE = "pif_json_manage_preference";
     private static final String KEYBOX_DATA_KEY = "keybox_data_setting";
 
     private ActivityResultLauncher<Intent> mKeyboxFilePickerLauncher;
     private KeyboxDataPreference mKeyboxDataPreference;
-    private Preference mPifJsonManagePreference;
 
     private Handler mHandler;
 
@@ -76,8 +74,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
         mHandler = new Handler();
 
-        mPifJsonManagePreference = findPreference(KEY_PIF_JSON_MANAGE_PREFERENCE);
-
         mKeyboxFilePickerLauncher = registerForActivityResult(
         new ActivityResultContracts.StartActivityForResult(),
         result -> {
@@ -92,57 +88,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     }
 
     @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference == mPifJsonManagePreference) {
-            onPifManageScreen(context);
-            return true;
-        }
-        return super.onPreferenceTreeClick(preference);
-    }
-
-    private void onPifManageScreen(Context context) {
-        final String[] items = {
-            resources.getString(R.string.spoofing_pif_json_download_title),
-            resources.getString(R.string.spoofing_pif_json_select_title),
-        };
-        new AlertDialog.Builder(context)
-            .setTitle(resources.getString(R.string.spoofing_pif_manage_title))
-            .setItems(items, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    if (which == 0) {
-                        downloadPifJson(context);
-                    } else if (which == 1) {
-                        selectPifJson(context);
-                    }
-                }
-            })
-            .show();
-    }
-
-    private void downloadPifJson(Context context) {
-        DownloadManager downloadManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
-        Uri uri = Uri.parse(resources.getString(R.string.spoofing_pif_json_download_url));
-        String mes = resources.getString(R.string.spoofing_pif_json_download_message);
-
-        DownloadManager.Request request = new DownloadManager.Request(uri)
-            .setTitle("pif.json")
-            .setDescription(mes)
-            .setMimeType("application/json")
-            .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-            .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "pif.json");
-        downloadManager.enqueue(request);
-
-        Toast.makeText(context, resources.getString(R.string.spoofing_pif_json_download_message), Toast.LENGTH_LONG).show();
-    }
-
-    private void selectPifJson(Context context) {
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        intent.setType("application/json");
-        startActivityForResult(intent, 10001);
-    }
-
-    @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mKeyboxDataPreference = findPreference(KEYBOX_DATA_KEY);
@@ -151,34 +96,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         }
     }
 
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 10001 && resultCode == Activity.RESULT_OK) {
-            Uri uri = data.getData();
-            Log.d(TAG, "URI received: " + uri.toString());
-            try (InputStream inputStream = getActivity().getContentResolver().openInputStream(uri)) {
-                if (inputStream != null) {
-                    String json = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
-                    Log.d(TAG, "JSON data: " + json);
-                    JSONObject jsonObject = new JSONObject(json);
-                    for (Iterator<String> it = jsonObject.keys(); it.hasNext(); ) {
-                        String key = it.next();
-                        String value = jsonObject.getString(key);
-                        Log.d(TAG, "Setting property: persist.sys.pihooks_" + key + " = " + value);
-                        SystemProperties.set("persist.sys.pihooks_" + key, value);
-                    }
-                    Toast.makeText(
-                        getContext(),
-                        getContext().getResources().getString(R.string.spoofing_pif_json_select_success),
-                        Toast.LENGTH_LONG
-                    ).show();
-                }
-            } catch (Exception e) {
-                Log.e(TAG, "Error reading JSON or setting properties", e);
-            }
-        }
-    }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
