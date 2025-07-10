@@ -16,13 +16,6 @@
         android:summary="@string/spoofing_pif_toggle_summary"
         android:defaultValue="false" />
 
-    <!-- Play Integrity Fix - Key Attestation block disable -->
-    <tokyo.witaqua.settings.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pihooks.disable.gms_key_attestation_block"
-        android:title="@string/spoofing_pif_key_attestation_toggle_title"
-        android:summary="@string/spoofing_pif_key_attestation_toggle_summary"
-        android:defaultValue="false" />
-
     <!-- Keybox Data -->
     <tokyo.witaqua.settings.preferences.KeyboxDataPreference
         android:key="keybox_data_setting"
