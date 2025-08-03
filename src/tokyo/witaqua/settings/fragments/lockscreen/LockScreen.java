@@ -44,7 +44,6 @@ public class LockScreen extends SettingsPreferenceFragment implements
     private static final String KEY_WEATHER = "lockscreen_weather_enabled";
 
     private Preference mWeather;
-    private OmniJawsClient mWeatherClient;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,7 +56,6 @@ public class LockScreen extends SettingsPreferenceFragment implements
         final Resources resources = context.getResources();
 
         mWeather = (Preference) findPreference(KEY_WEATHER);
-        mWeatherClient = new OmniJawsClient(getContext());
         updateWeatherSettings();
     }
 
@@ -69,9 +67,9 @@ public class LockScreen extends SettingsPreferenceFragment implements
     }
 
     private void updateWeatherSettings() {
-        if (mWeatherClient == null || mWeather == null) return;
+        if (mWeather == null) return;
 
-        boolean weatherEnabled = mWeatherClient.isOmniJawsEnabled();
+        boolean weatherEnabled = OmniJawsClient.get().isOmniJawsEnabled(getContext());
         mWeather.setEnabled(weatherEnabled);
         mWeather.setSummary(weatherEnabled ? R.string.lockscreen_weather_summary :
             R.string.lockscreen_weather_enabled_info);
