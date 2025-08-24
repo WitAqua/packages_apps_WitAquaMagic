@@ -33,7 +33,7 @@
   <string name="power_menu_title">電源メニュー</string>
   <string name="power_menu_summary">アクション、ロック画面</string>
   <string name="notifications_title">通知</string>
-  <string name="notifications_summary">Alerts, interface</string>
+  <string name="notifications_summary">アラート、インターフェース</string>
   <!-- Quick Settings -->
   <string name="quick_settings_transparency_title">背景の透過</string>
   <string name="quick_settings_transparency_summary">クイック設定の透過度レベルを設定します</string>
