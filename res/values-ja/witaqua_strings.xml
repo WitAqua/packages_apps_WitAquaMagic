@@ -42,7 +42,7 @@
   <!-- Themes -->
   <string name="themes_monet_category">Monet</string>
   <string name="themes_monet_title">Monet の設定</string>
-  <string name="themes_monet_summary">Android 内蔵テーマエンジンをカスタマイズします</string>
+  <string name="themes_monet_summary">Android 内蔵のテーマエンジンをカスタマイズします</string>
   <string name="themes_fonts_category">フォント</string>
   <string name="themes_system_font_title">システムフォント</string>
   <string name="themes_system_font_summary">システムフォントのスタイルを設定します</string>
@@ -216,7 +216,7 @@
   <!-- Custom seekbar -->
   <string name="custom_seekbar_value">値: <xliff:g id="v">%s</xliff:g></string>
   <string name="custom_seekbar_default_value">デフォルト</string>
-  <string name="custom_seekbar_default_value_to_set">デフォルトの値: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
+  <string name="custom_seekbar_default_value_to_set">デフォルトの値: <xliff:g id="v">%s</xliff:g>\n長押しで設定します</string>
   <string name="custom_seekbar_default_value_is_set">デフォルト値が設定されています</string>
   <!-- General -->
   <string name="enable">有効</string>
