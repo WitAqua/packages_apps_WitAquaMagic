@@ -217,7 +217,7 @@
   <string name="custom_seekbar_value">値: <xliff:g id="v">%s</xliff:g></string>
   <string name="custom_seekbar_default_value">デフォルト</string>
   <string name="custom_seekbar_default_value_to_set">デフォルトの値: <xliff:g id="v">%s</xliff:g>\n長押しで設定します</string>
-  <string name="custom_seekbar_default_value_is_set">デフォルト値が設定されています</string>
+  <string name="custom_seekbar_default_value_is_set">デフォルトの値が設定されています</string>
   <!-- General -->
   <string name="enable">有効</string>
   <string name="disable">無効</string>
