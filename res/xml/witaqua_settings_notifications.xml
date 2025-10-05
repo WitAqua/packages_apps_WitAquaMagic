@@ -13,6 +13,13 @@
         android:key="notifications_interface_category"
         android:title="@string/notifications_interface_category">
 
+        <!-- Notification row transluency -->
+        <tokyo.witaqua.settings.preferences.SecureSettingSwitchPreference
+        android:key="notification_row_transparency"
+        android:title="@string/notification_row_transparency_title"
+        android:summary="@string/notification_row_transparency_summary"
+        android:defaultValue="true" />
+
         <!-- Kill app button -->
         <tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_guts_kill_app_button"
