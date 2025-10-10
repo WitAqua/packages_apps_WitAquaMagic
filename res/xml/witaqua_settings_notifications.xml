@@ -19,5 +19,11 @@
             android:title="@string/notifications_kill_app_button_title"
             android:summary="@string/notifications_kill_app_button_summary"
             android:defaultValue="false" />
+        
+        <Preference
+            android:key="island_notification"
+            android:title="@string/notifications_island_notification_title"
+            android:summary="@string/notifications_island_notification_summary"
+            android:fragment="tokyo.witaqua.settings.fragments.notifications.IslandSettings" />
     </PreferenceCategory>
 </PreferenceScreen>
