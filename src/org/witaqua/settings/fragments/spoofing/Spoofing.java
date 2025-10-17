@@ -23,12 +23,14 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.witaqua.KeyProviderManager;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
 import org.witaqua.settings.preferences.KeyboxDataPreference;
+import org.witaqua.settings.preferences.SystemPropertySwitchPreference;
 
 import java.util.List;
 
@@ -38,9 +40,12 @@ public class Spoofing extends SettingsPreferenceFragment implements
 
     private static final String TAG = "Spoofing";
 
+    private static final String SYS_PI_SPOOF = "persist.sys.pixelprops.pi";
+    private static final String SYS_GMS_CERT_SPOOF = "persist.sys.pixelprops.gmscertchain";
     private static final String KEYBOX_DATA_KEY = "keybox_data_setting";
 
     private ActivityResultLauncher<Intent> mKeyboxFilePickerLauncher;
+    private SystemPropertySwitchPreference mDisableForceIntegrity;
     private KeyboxDataPreference mKeyboxDataPreference;
 
     @Override
@@ -53,6 +58,11 @@ public class Spoofing extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources resources = context.getResources();
 
+        mDisableForceIntegrity = findPreference(SYS_GMS_CERT_SPOOF);
+        if (mDisableForceIntegrity != null) {
+            mDisableForceIntegrity.setEnabled(KeyProviderManager.isKeyboxAvailable());
+        }
+
         mKeyboxFilePickerLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             result -> {
@@ -61,6 +71,9 @@ public class Spoofing extends SettingsPreferenceFragment implements
                     Preference pref = findPreference(KEYBOX_DATA_KEY);
                     if (pref instanceof KeyboxDataPreference) {
                         ((KeyboxDataPreference) pref).handleFileSelected(uri);
+                    }
+                    if (mDisableForceIntegrity != null) {
+                        mDisableForceIntegrity.setEnabled(KeyProviderManager.isKeyboxAvailable());
                     }
                 }
             }

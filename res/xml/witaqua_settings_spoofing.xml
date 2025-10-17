@@ -20,4 +20,10 @@
     <org.witaqua.settings.preferences.KeyboxDataPreference
         android:key="keybox_data_setting"
         android:title="@string/keybox_data_title"/>
+
+    <!-- Block attestation even with Keybox Data -->
+    <org.witaqua.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.gmscertchain"
+        android:title="@string/pi_gmscertchain_title"
+        android:summary="@string/pi_gmscertchain_summary" />
 </PreferenceScreen>
