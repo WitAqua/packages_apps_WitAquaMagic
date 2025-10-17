@@ -35,6 +35,13 @@
             android:title="@string/lockscreen_smartspace_title"
             android:summary="@string/lockscreen_smartspace_summary"
             android:defaultValue="true" />
+        
+        <!-- Ambient Wallpaper -->
+        <tokyo.witaqua.settings.preferences.SecureSettingSwitchPreference
+            android:key="doze_always_on_wallpaper_enabled"
+            android:title="@string/doze_always_on_wallpaper_title"
+            android:summary="@string/doze_always_on_wallpaper_summary"
+            android:defaultValue="@*android:bool/config_dozeSupportsAodWallpaper" />
     </PreferenceCategory>
 
     <PreferenceCategory
