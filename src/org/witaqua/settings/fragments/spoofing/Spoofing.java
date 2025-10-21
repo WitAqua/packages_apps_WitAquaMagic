@@ -13,7 +13,6 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.SystemProperties;
 import android.view.View;
 
 import androidx.activity.result.ActivityResultLauncher;
@@ -22,6 +21,7 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.witaqua.KeyProviderManager;
@@ -31,7 +31,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
 import org.witaqua.settings.preferences.KeyboxDataPreference;
-import org.witaqua.settings.preferences.SystemPropertySwitchPreference;
 
 import java.util.List;
 
@@ -41,15 +40,11 @@ public class Spoofing extends SettingsPreferenceFragment implements
 
     private static final String TAG = "Spoofing";
 
-    private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
-    private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
-    private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
-    private static final String SYS_PI_SPOOF = "persist.sys.pixelprops.pi";
-    private static final String SYS_GMS_CERT_SPOOF = "persist.sys.pixelprops.gmscertchain";
+    private static final String KEY_GMS_CERT_SPOOF = "pi_gms_cert_chain";
     private static final String KEYBOX_DATA_KEY = "keybox_data_setting";
 
     private ActivityResultLauncher<Intent> mKeyboxFilePickerLauncher;
-    private SystemPropertySwitchPreference mDisableForceIntegrity;
+    private SwitchPreferenceCompat mDisableForceIntegrity;
     private KeyboxDataPreference mKeyboxDataPreference;
 
     @Override
@@ -62,7 +57,7 @@ public class Spoofing extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources resources = context.getResources();
 
-        mDisableForceIntegrity = findPreference(SYS_GMS_CERT_SPOOF);
+        mDisableForceIntegrity = (SwitchPreferenceCompat) findPreference(KEY_GMS_CERT_SPOOF);
         if (mDisableForceIntegrity != null) {
             mDisableForceIntegrity.setEnabled(KeyProviderManager.isKeyboxAvailable());
         }
