@@ -27,6 +27,13 @@
         android:title="@string/pi_gmscertchain_title"
         android:summary="@string/pi_gmscertchain_summary" />
 
+    <!-- Vbmeta hash attestation -->
+    <org.witaqua.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.vbmeta.update"
+        android:title="@string/vbmeta_attestation_title"
+        android:summary="@string/vbmeta_attestation_summary"
+        android:defaultValue="true" />
+
     <!-- Unlimited google photos storage -->
     <org.witaqua.settings.preferences.SecureSettingSwitchPreference
         android:key="pi_photos_spoof"
