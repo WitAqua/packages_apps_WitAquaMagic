@@ -22,6 +22,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
+import android.view.View;
 
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
@@ -35,6 +36,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
 import java.util.List;
+
+import lineageos.preference.LineageSystemSettingListPreference;
 
 import tokyo.witaqua.settings.preferences.SystemSettingListPreference;
 import tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference;
@@ -51,11 +54,17 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final String KEY_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String KEY_BATTERY_TEXT_CHARGING = "status_bar_battery_text_charging";
     private static final String KEY_BLUETOOTH_BATTERY_STATUS = "bluetooth_show_battery";
+    private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
 
     private static final int BATTERY_STYLE_PORTRAIT = 0;
     private static final int BATTERY_STYLE_TEXT = 4;
     private static final int BATTERY_STYLE_HIDDEN = 5;
 
+    private static final int PULLDOWN_DIR_NONE = 0;
+    private static final int PULLDOWN_DIR_RIGHT = 1;
+    private static final int PULLDOWN_DIR_LEFT = 2;
+
+    private LineageSystemSettingListPreference mQuickPulldown;
     private PreferenceCategory mIconsCategory;
     private SystemSettingListPreference mBatteryPercent;
     private SystemSettingListPreference mBatteryStyle;
@@ -95,6 +104,22 @@ public class StatusBar extends SettingsPreferenceFragment implements
         if (!DeviceUtils.deviceSupportsBluetooth(context)) {
             mIconsCategory.removePreference(mBluetoothBatteryStatus);
         }
+
+        mQuickPulldown = findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
+        mQuickPulldown.setOnPreferenceChangeListener(this);
+        updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        // Adjust status bar preferences for RTL
+        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+            mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
+        } else {
+            mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries);
+        }
     }
 
     @Override
@@ -117,8 +142,35 @@ public class StatusBar extends SettingsPreferenceFragment implements
             mBatteryTextCharging.setEnabled(batterystyle == BATTERY_STYLE_HIDDEN ||
                     (batterystyle != BATTERY_STYLE_TEXT && value != 2));
             return true;
+        } else if (preference == mQuickPulldown) {
+            int value = Integer.parseInt((String) newValue);
+            updateQuickPulldownSummary(value);
+            return true;
         }
         return false;
+    }
+
+    private void updateQuickPulldownSummary(int value) {
+        String summary="";
+        switch (value) {
+            case PULLDOWN_DIR_NONE:
+                summary = getResources().getString(
+                    R.string.status_bar_quick_qs_pulldown_off);
+                break;
+
+            case PULLDOWN_DIR_LEFT:
+            case PULLDOWN_DIR_RIGHT:
+                summary = getResources().getString(
+                    R.string.status_bar_quick_qs_pulldown_summary,
+                    getResources().getString(
+                        (value == PULLDOWN_DIR_LEFT) ^
+                        (getResources().getConfiguration().getLayoutDirection()
+                            == View.LAYOUT_DIRECTION_RTL)
+                        ? R.string.status_bar_quick_qs_pulldown_summary_left
+                        : R.string.status_bar_quick_qs_pulldown_summary_right));
+                break;
+        }
+        mQuickPulldown.setSummary(summary);
     }
 
     @Override
