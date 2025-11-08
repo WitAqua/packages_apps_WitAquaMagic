@@ -287,6 +287,10 @@
     <string name="quick_settings_header_offset_title">Header image offset</string>
     <string name="quick_settings_header_offset_summary">Adjust the image header size</string>
 
+    <!-- chinese lunar calendar -->
+    <string name="quick_settings_show_lunar_calendar_title">Chinese Lunar Calendar</string>
+    <string name="quick_settings_show_lunar_calendar_summary">Show lunar calendar in Quick Settings</string>
+
     <!-- Notifications -->
     <string name="notifications_interface_category">Interface</string>
     <string name="notifications_kill_app_button_title">Kill app</string>

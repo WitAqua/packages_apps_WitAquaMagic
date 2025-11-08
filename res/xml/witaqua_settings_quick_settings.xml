@@ -64,6 +64,13 @@
             android:entries="@array/status_bar_battery_percent_entries"
             android:entryValues="@array/status_bar_battery_percent_values"
             android:defaultValue="2" />
+        
+        <!-- Chinese Lunar Calendar-->
+        <tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_show_lunar_calendar"
+            android:title="@string/quick_settings_show_lunar_calendar_title"
+            android:summary="@string/quick_settings_show_lunar_calendar_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
