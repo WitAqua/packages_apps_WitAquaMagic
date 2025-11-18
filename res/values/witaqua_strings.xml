@@ -298,11 +298,8 @@
     <string name="power_menu_lock_screen_secure_summary">Show the power menu while the device is locked</string>
 
     <!-- Miscellaneous -->
-    <string name="spoofing_pif_toggle_title">Disable Play Integrity fix spoofing</string>
-    <string name="spoofing_pif_toggle_summary">Disable the ROM\'s built-in Play Integrity fix values. Please turn on when you use third party modules. (E.g. TrickyStore)</string>
-    <string name="spoofing_pif_key_attestation_toggle_title">Disable Key Attestation</string>
-    <string name="spoofing_pif_key_attestation_toggle_summary">Disable the ROM\'s built-in key attestation features</string>
-    <string name="spoofing_pif_manage_title">Manage PIF spoofing values</string>
+    <string name="spoofing_pif_toggle_title">Spoof certified properties</string>
+    <string name="spoofing_pif_toggle_summary">Spoof PI certified properties to GMS\nRequires a reboot to apply</string>
     <string name="spoofing_photos_title">Google Photos spoof</string>
     <string name="spoofing_photos_summary">Spoof the Google Photos app as a Pixel XL</string>
     <string name="disable_camera_sounds_title">Force disable camera sounds</string>

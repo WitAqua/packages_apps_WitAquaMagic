@@ -10,11 +10,10 @@
     android:title="@string/miscellaneous_title">
 
     <!-- Play Integrity Fix -->
-    <tokyo.witaqua.settings.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pihooks.disable.gms_props"
+    <tokyo.witaqua.settings.preferences.OverlaySwitchPreference
+        android:key="tokyo.witaqua.certifiedprops.overlay"
         android:title="@string/spoofing_pif_toggle_title"
-        android:summary="@string/spoofing_pif_toggle_summary"
-        android:defaultValue="false" />
+        android:summary="@string/spoofing_pif_toggle_summary" />
 
     <!-- Keybox Data -->
     <tokyo.witaqua.settings.preferences.KeyboxDataPreference
@@ -25,7 +24,7 @@
 
     <!-- Google Photos -->
     <tokyo.witaqua.settings.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pihooks.enable.photos_spoof"
+        android:key="persist.sys.pixelprops.gphotos"
         android:title="@string/spoofing_photos_title"
         android:summary="@string/spoofing_photos_summary"
         android:defaultValue="false" />
