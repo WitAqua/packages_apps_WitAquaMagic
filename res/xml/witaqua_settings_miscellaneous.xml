@@ -73,4 +73,11 @@
         android:title="@string/pocket_judge_title"
         android:summary="@string/pocket_judge_summary"
         android:defaultValue="false" />
+
+    <!-- Scroll Text on Toast -->
+    <tokyo.witaqua.settings.preferences.SystemSettingSwitchPreference
+        android:key="enable_scroll_toast_text"
+        android:title="@string/scroll_toast_text_title"
+        android:summary="@string/scroll_toast_text_summary"
+        android:defaultValue="true" />
 </PreferenceScreen>

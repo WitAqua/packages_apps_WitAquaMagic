@@ -429,4 +429,8 @@
     <!-- IME button space -->
     <string name="show_ime_space_title">Show IME button space</string>
     <string name="show_ime_space_summary">Enable the input method quick switch feature to switch input methods or hide the on-screen keyboard from the feature bar at the bottom of the screen when typing</string>
+
+    <!-- Scroll text on toast -->
+    <string name="scroll_toast_text_title">Eneble scroll text on Toast</string>
+    <string name="scroll_toast_text_summary">Enable scrolling long text on toast</string>
 </resources>
