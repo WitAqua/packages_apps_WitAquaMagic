@@ -57,6 +57,13 @@
         android:summary="@string/miscellaneous_app_downgrade_summary"
         android:defaultValue="false" />
 
+    <!-- Bypass low target SDK block -->
+    <tokyo.witaqua.settings.preferences.GlobalSettingSwitchPreference
+        android:key="pm_bypass_low_target_sdk_block"
+        android:title="@string/miscellaneous_bypass_low_target_sdk_block_title"
+        android:summary="@string/miscellaneous_bypass_low_target_sdk_block_summary"
+        android:defaultValue="false" />
+
     <!-- Freeform launch mode -->
     <tokyo.witaqua.settings.preferences.SystemSettingListPreference
         android:key="freeform_launch_mode"

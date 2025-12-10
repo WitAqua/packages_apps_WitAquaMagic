@@ -321,6 +321,8 @@
     <string name="ignore_window_secure_summary">Fixes black screenshots and recordings, May lead to privacy leaks, Restart apps to apply changes</string>
     <string name="miscellaneous_app_downgrade_title">Allow application downgrade</string>
     <string name="miscellaneous_app_downgrade_summary">Allow downgrading system applications, which may result in crashes and data loss</string>
+    <string name="miscellaneous_bypass_low_target_sdk_block_title">Bypass low target SDK block</string>
+    <string name="miscellaneous_bypass_low_target_sdk_block_summary">Bypass installation block for apps with low target SDK</string>
     <string name="keybox_data_title">Select keybox XML to spoof</string>
     <string name="keybox_data_summary">Select keybox XML used for key attestation spoofing for all apps system wide. Click the delete button in order to reset the keybox data values used by the system.</string>
 
