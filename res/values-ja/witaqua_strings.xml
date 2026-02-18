@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 WitAqua
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- WitAquaMagic -->
+    <string name="witaqua_dashboard_title">WitAquaMagic</string>
+
+    <!-- Categories -->
+    <string name="about_title">バージョン情報</string>
+    <string name="about_summary">WitAqua について</string>
+    <string name="quick_settings_title">クイック設定</string>
+    <string name="quick_settings_summary">インターフェース、ロック画面</string>
+    <string name="themes_title">テーマ</string>
+    <string name="themes_summary">Monet、フォント、アイコン</string>
+    <string name="miscellaneous_title">その他</string>
+    <string name="miscellaneous_summary">スペシャルな設定 (使用は自己責任です！)</string>
+    <string name="lock_screen_title">ロック画面</string>
+    <string name="lock_screen_summary">インターフェース、その他</string>
+    <string name="status_bar_title">ステータスバー</string>
+    <string name="status_bar_summary">ジェスチャー、アイコン、プライバシーインジケーター</string>
+    <string name="power_menu_title">電源メニュー</string>
+    <string name="power_menu_summary">アクション、ロック画面</string>
+    <string name="notifications_title">通知</string>
+    <string name="notifications_summary">アラート、インターフェース</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings_transparency_title">背景の透過</string>
+    <string name="quick_settings_transparency_summary">クイック設定の透過度レベルを設定します</string>
+    <string name="quick_settings_require_unlock_title">セキュアクイック設定タイルはロック解除を要求</string>
+    <string name="quick_settings_require_unlock_summary">以下のクイック設定を操作をする前にデバイスのロック解除を要求するようにします:\n機内モード、バッテリーセーバー、Bluetooth、モバイル、データセーバー、ホットスポット、インターネット、NFC、回転ロック、Wi-Fi</string>
+
+    <!-- Themes & UI -->
+    <string name="themes_monet_category">Monet</string>
+    <string name="themes_monet_title">Monet の設定</string>
+    <string name="themes_monet_summary">Android 内蔵のテーマエンジンをカスタマイズします</string>
+    <string name="themes_fonts_category">フォント</string>
+    <string name="themes_system_font_title">システムフォント</string>
+    <string name="themes_system_font_summary">システムフォントのスタイルを設定します</string>
+    <string name="themes_emoji_title">絵文字</string>
+    <string name="themes_emoji_summary">絵文字のスタイルを設定します</string>
+    <string name="themes_icons_category">アイコン</string>
+    <string name="themes_system_icons_title">システムアイコン</string>
+    <string name="themes_system_icons_summary">システムアイコンのスタイルを設定します</string>
+    <string name="themes_icon_shape_title">アイコンの形状</string>
+    <string name="themes_icon_shape_summary">システムアイコンの形状を設定します</string>
+    <string name="themes_animations_category">アニメーション</string>
+    <string name="themes_screen_off_animation_title">画面 OFF 時のアニメーション</string>
+    <string name="themes_screen_off_animation_default">デフォルト</string>
+    <string name="themes_screen_off_animation_crt">CRT</string>
+    <string name="themes_screen_off_animation_scale">スケール</string>
+    <string name="themes_charging_animation_title">充電中のアニメーション</string>
+    <string name="themes_charging_animation_summary">デバイスが接続されたときにアニメーションを表示します</string>
+
+    <!-- Emoji Picker -->
+    <string name="themes_emoji_btn_reset_title">リセット</string>
+    <string name="themes_emoji_select_message">適用に成功しました。新しい絵文字を使用するには再起動が必要です。</string>
+
+    <!-- Themes/Monet Engine -->
+    <string name="monet_engine_custom_color_title">アクセントの色</string>
+    <string name="monet_engine_custom_color_summary">アクセントのカスタムカラーを選択します</string>
+    <string name="monet_engine_custom_bgcolor_title">背景の色</string>
+    <string name="monet_engine_custom_bgcolor_summary">背景のカスタムカラーを選択します</string>
+    <string name="monet_engine_color_override_title">カスタムカラー</string>
+    <string name="monet_engine_luminance_factor_title">輝度</string>
+    <string name="monet_engine_luminance_factor_summary">値が高いほど明るい色になります</string>
+    <string name="monet_engine_chroma_factor_title">彩度係数</string>
+    <string name="monet_engine_chroma_factor_summary">値が高いほど色が濃くなります</string>
+    <string name="monet_engine_whole_palette_title">パレット全体</string>
+    <string name="monet_engine_whole_palette_summary">輝度と彩度の選択を二次色にも影響するようにします</string>
+    <string name="monet_engine_tint_background_title">背景を着色する</string>
+    <string name="monet_engine_tint_background_summary">輝度と彩度の選択を背景色にも反映するようにします</string>
+    <string name="monet_engine_style_title">テーマスタイル</string>
+    <string name="monet_engine_style_tonal_spot">Tonal Spot (デフォルト)</string>
+    <string name="monet_engine_style_vibrant">Vibrant</string>
+    <string name="monet_engine_style_expressive">Expressive</string>
+    <string name="monet_engine_style_spritz">Spritz</string>
+    <string name="monet_engine_style_rainbow">Rainbow</string>
+    <string name="monet_engine_style_fruit_salad">Fruit Salad</string>
+    <string name="monet_engine_color_source_title">カラーソース</string>
+    <string name="monet_engine_color_source_both">両方 (デフォルト)</string>
+    <string name="monet_engine_color_source_home">ホームの壁紙</string>
+    <string name="monet_engine_color_source_lock">ロック画面の壁紙</string>
+    <string name="monet_engine_color_source_preset">プリセット</string>
+
+    <!-- Lock screen -->
+    <string name="lock_screen_interface_category">インターフェース</string>
+    <string name="lock_screen_charging_stats_title">充電中の状態</string>
+    <string name="lock_screen_charging_stats_summary">充電中に電流、電圧、ワット数、温度の統計情報を表示します</string>
+
+    <!-- Status bar -->
+    <string name="status_bar_gestures_category">ジェスチャー</string>
+    <string name="status_bar_brightness_control_title">明るさのコントロール</string>
+    <string name="status_bar_brightness_control_summary">ステータスバーをスワイプで画面の明るさを調整します</string>
+    <string name="status_bar_icons_category">アイコン</string>
+    <string name="status_bar_colored_icons_title">色付きアイコン</string>
+    <string name="status_bar_colored_icons_summary">アプリの通知にランチャーのアイコンを使用します</string>
+    <string name="status_bar_notif_count_title">通知の数</string>
+    <string name="status_bar_notif_count_summary">各アプリアイコンに未読通知の数を表示します</string>
+    <string name="status_bar_bluetooth_battery_title">Bluetooth のバッテリー状態</string>
+    <string name="status_bar_bluetooth_battery_summary">接続されている Bluetooth デバイスのバッテリー状態を表示します (利用可能な場合)</string>
+    <string name="status_bar_wifi_standard_icon_title">Wi-Fi 規格</string>
+    <string name="status_bar_wifi_standard_icon_summary">Wi-Fi アイコンの横に Wi-Fi 規格を表示します</string>
+    <string name="status_bar_network_traffic_settings_title">ネットワークトラフィックモニター</string>
+    <string name="status_bar_network_traffic_settings_summary">現在のネットワークトラフィックレベルを表示およびカスタマイズします</string>
+    <string name="status_bar_tuner_title">ステータスバーの調整</string>
+    <string name="status_bar_tuner_summary">表示するシステムアイコンを選択します</string>
+    <string name="status_bar_clock_and_date_title">時計と日付</string>
+    <string name="status_bar_clock_and_date_summary">時計と日付をカスタマイズします</string>
+    <string name="status_bar_clock_chip_title">背景チップ</string>
+    <string name="status_bar_clock_chip_summary">時計の後方にアクセントチップを表示します</string>
+
+    <!-- Status bar/Clock & date -->
+    <string name="status_bar_clock_position_title">時計の位置</string>
+    <string name="status_bar_clock_position_right">右</string>
+    <string name="status_bar_clock_position_left">左</string>
+    <string name="status_bar_clock_position_center">中央</string>
+    <string name="status_bar_clock_position_hidden">非表示</string>
+    <string name="status_bar_clock_seconds_title">時計の秒数</string>
+    <string name="status_bar_clock_seconds_summary">ステータスバーの時計に秒数を表示します</string>
+    <string name="status_bar_clock_auto_hide_intervals_title">一定間隔で自動的に非表示</string>
+    <string name="status_bar_clock_auto_hide_intervals_summary">特定の時間間隔で時計を非表示にします</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">非表示する時間</string>
+    <string name="status_bar_clock_auto_hide_hdur_summary">時計を非表示にする秒数を設定します</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">表示する時間</string>
+    <string name="status_bar_clock_auto_hide_sdur_summary">時計を表示にする秒数を設定します</string>
+    <string name="status_bar_clock_auto_hide_launcher_title">ランチャーで自動的に非表示にする</string>
+    <string name="status_bar_clock_auto_hide_launcher_summary">ランチャーが表示されているときに時計を非表示にします</string>
+    <string name="status_bar_am_pm_title">AM/PM のスタイル</string>
+    <string name="status_bar_am_pm_info">24 時間制が有効になっています</string>
+    <string name="status_bar_am_pm_normal">通常</string>
+    <string name="status_bar_am_pm_small">小さい</string>
+    <string name="status_bar_am_pm_hidden">非表示</string>
+    <string name="status_bar_date_title">日付</string>
+    <string name="status_bar_date_none">非表示</string>
+    <string name="status_bar_date_small">小さい</string>
+    <string name="status_bar_date_normal">通常</string>
+    <string name="status_bar_date_format_title">日付の形式</string>
+    <string name="status_bar_date_style">日付のスタイル</string>
+    <string name="status_bar_date_style_normal">通常</string>
+    <string name="status_bar_date_style_lowercase">小文字</string>
+    <string name="status_bar_date_style_uppercase">大文字</string>
+    <string name="status_bar_date_format_custom">カスタム Java 形式</string>
+    <string name="status_bar_date_string_edittext_title">日付形式 (例: MM/dd/yy) で入力してください</string>
+    <string name="status_bar_date_string_edittext_summary">文字列を入力</string>
+    <string name="status_bar_clock_date_position">日付の位置</string>
+    <string name="status_bar_clock_date_right">右側に時計</string>
+    <string name="status_bar_clock_date_left">左側に時計</string>
+
+    <!-- Status bar/Network traffic -->
+    <string name="network_traffic_location_title">位置情報</string>
+    <string name="network_traffic_location_disable">無効</string>
+    <string name="network_traffic_location_statusbar">ステータスバー</string>
+    <string name="network_traffic_location_quick_statusbar">クイックステータスバー</string>
+    <string name="network_traffic_mode_title">表示モード</string>
+    <string name="network_traffic_mode_up">アップロードのみ</string>
+    <string name="network_traffic_mode_down">ダウンロードのみ</string>
+    <string name="network_traffic_mode_all">アップロードとダウンロード</string>
+    <string name="network_traffic_autohide">自動で非表示</string>
+    <string name="network_traffic_autohide_summary">非アクティブのときにトラフィックモニターを非表示にします</string>
+    <string name="network_traffic_autohide_threshold">非アクティブのしきい値</string>
+    <string name="network_traffic_refresh_interval_title">更新の間隔</string>
+    <string name="network_traffic_refresh_interval_summary">速度を再測定するまでの間隔を設定します</string>
+    <string name="network_traffic_units_title">トラフィック測定の単位</string>
+    <string name="network_traffic_units_bits">ビット/秒 (b/s)</string>
+    <string name="network_traffic_units_kilobits">キロビット/秒 (kb/s)</string>
+    <string name="network_traffic_units_megabits">メガビット/秒 (Mb/s)</string>
+    <string name="network_traffic_units_bytes">バイト/秒 (B/s)</string>
+    <string name="network_traffic_units_kilobytes">キロバイト/秒 (kB/s)</string>
+    <string name="network_traffic_units_megabytes">メガバイト/秒 (MB/s)</string>
+    <string name="network_traffic_hidearrow">矢印を非表示</string>
+    <string name="network_traffic_hidearrow_summary">ネットワークトラフィックインジケーターの矢印を非表示にします</string>
+
+    <!-- Quick settings -->
+    <string name="quick_settings_lock_screen_category">ロック画面</string>
+    <string name="quick_settings_secure_lock_screen_title">セキュアなロック画面でクイック設定を非表示</string>
+    <string name="quick_settings_secure_lock_screen_summary">デバイスがロックされている間、通知シェードのすべてのクイック設定を非表示にします</string>
+
+    <!-- Notifications -->
+    <string name="notifications_interface_category">インターフェース</string>
+    <string name="notifications_kill_app_button_title">アプリを強制停止</string>
+    <string name="notifications_kill_app_button_summary">通知の長押し時のメニューにアプリを強制停止を表示します</string>
+
+    <!-- Power menu -->
+    <string name="power_menu_lock_screen_category">ロック画面</string>
+    <string name="power_menu_lock_screen_secure_title">セキュアなロック画面で表示</string>
+    <string name="power_menu_lock_screen_secure_summary">デバイスがロックされているときに電源メニューを表示します</string>
+
+    <!-- Miscellaneous -->
+    <string name="spoofing_pif_toggle_title">Play Integrity Fix による偽装を無効化する</string>
+    <string name="spoofing_pif_toggle_summary">ROM に内蔵されている Play Integrity Fix の値を無効化します。サードパーティ製モジュール (例: TrickyStore) を使用する場合は、有効化してください。</string>
+    <string name="spoofing_pif_key_attestation_toggle_title">Key Attestation を無効化する</string>
+    <string name="spoofing_pif_key_attestation_toggle_summary">ROM に内蔵されている Key Attestation 機能を無効化します</string>
+    <string name="spoofing_pif_manage_title">PIF 偽装の値を管理</string>
+    <string name="spoofing_photos_title">Google フォトの偽装</string>
+    <string name="spoofing_photos_summary">Google フォトアプリを Pixel XL に偽装します</string>
+    <string name="disable_camera_sounds_title">カメラの音を強制的に無効化する</string>
+    <string name="disable_camera_sounds_summary">再起動が必要です。法的な問題が発生した場合、責任は一切負いません。</string>
+    <string name="ignore_window_secure_title">ウィンドウセキュアフラグを無視する</string>
+    <string name="ignore_window_secure_summary">スクリーンショットや録画が黒くなってしまう問題を修正します。プライバシーに関する漏洩に繋がる可能性があります。変更を適用するにはアプリを再起動してください。</string>
+    <string name="miscellaneous_app_downgrade_title">アプリのダウングレードを許可する</string>
+    <string name="miscellaneous_app_downgrade_summary">システムアプリのダウングレードを許可すると、クラッシュやデータの損失が発生する可能性があります</string>
+    <string name="keybox_data_title">偽装する keybox.xml を選択</string>
+    <string name="keybox_data_summary">システム全体のすべてのアプリでのキー認証の偽装に使用する keybox.xml を選択します。システムで使用される keybox のデータ値をリセットするには、削除ボタンをタップしてください。</string>
+
+    <!-- About -->
+    <string name="about_info">私たちは日本のAndroid愛好家の小さなチームで、特別なものを作るために集まりました。ストックAndroidのシンプルさが好きでしたが、不要なブロートウェアなしでもう少しパーソナリティと実用性が必要だと感じたことがきっかけでした。そこで、私たちは腕まくりをして、クリーンでレスポンシブなROMの作成に取り掛かりました。</string>
+    <string name="about_website_title">ウェブサイト</string>
+    <string name="about_website_summary">ウェブサイトを確認する</string>
+    <string name="about_github_summary">GitHub を確認する</string>
+    <string name="about_x_summary">X を確認する</string>
+    <string name="about_contributors_title">貢献者</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">カラーピッカー</string>
+    <string name="press_color_to_apply">下の色を選択で適用します</string>
+    <string name="set">設定</string>
+    <string name="color_default">デフォルト</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">値: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">デフォルト</string>
+    <string name="custom_seekbar_default_value_to_set">デフォルトの値: <xliff:g id="v">%s</xliff:g>\n長押しで設定します</string>
+    <string name="custom_seekbar_default_value_is_set">デフォルトの値が設定されています</string>
+
+    <!-- General -->
+    <string name="enable">有効</string>
+    <string name="disable">無効</string>
+
+    <!-- Units -->
+    <string name="unit_milliseconds">ミリ秒</string>
+    <string name="unit_seconds">秒</string>
+
+    <!-- Freeform launch mode -->
+    <string name="freeform_launch_mode_title">フリーフォーム起動モード</string>
+    <string name="freeform_launch_mode_1">ネイティブ AOSP</string>
+    <string name="freeform_launch_mode_2">LMOFreeForm</string>
+
+</resources>
