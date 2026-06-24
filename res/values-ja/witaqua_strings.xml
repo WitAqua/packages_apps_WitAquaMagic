@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 WitAqua
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- WitAquaMagic -->
+    <string name="witaqua_dashboard_title">WitAquaMagic</string>
+
+    <!-- Categories -->
+    <string name="about_title">ROM の詳細</string>
+    <string name="about_summary">WitAqua について</string>
+
+    <!-- About -->
+    <string name="about_info">WitAqua は、日本の Android 愛好家によって開発された Android カスタム ROM です。この ROM の主な目的は、不要なブロートウェアのないストック Android エクスペリエンスを提供することです。クリーンでレスポンシブなシステムと合理化されたインターフェースを提供します。この ROM はストック Android の主要機能とシンプルさを維持しながら、使いやすさとカスタマイズ性を向上させる、慎重に選択された有用な拡張機能と追加機能も含んでいます。</string>
+    <string name="about_website_title">ホームページ</string>
+    <string name="about_website_summary">WitAqua のホームページに移動します</string>
+    <string name="about_website_url">https://witaqua.org/ja</string>
+    <string name="about_x_summary">WitAqua 公式 X を開きます</string>
+    <string name="about_discord_summary">WitAqua コミュニティ チャットを開きます</string>
+    <string name="about_github_summary">Github のソースコードを表示します</string>
+    <string name="about_contributors_title">私たちのチーム</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">色の選択</string>
+    <string name="press_color_to_apply">下部の色を押して適用します</string>
+    <string name="set">セット</string>
+    <string name="color_default">デフォルト</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">値: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">デフォルト</string>
+    <string name="custom_seekbar_default_value_to_set">既定値: <xliff:g id="v">%s</xliff:g>\n長押しで設定します</string>
+    <string name="custom_seekbar_default_value_is_set">既定値</string>
+</resources>

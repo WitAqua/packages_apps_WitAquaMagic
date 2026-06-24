@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 WitAqua
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/witaqua_dashboard_title">
+
+    <!-- About -->
+    <Preference
+        android:key="about"
+        android:title="@string/about_title"
+        android:summary="@string/about_summary"
+        android:icon="@drawable/ic_about"
+        android:fragment="org.witaqua.settings.fragments.about.About" />
+</PreferenceScreen>

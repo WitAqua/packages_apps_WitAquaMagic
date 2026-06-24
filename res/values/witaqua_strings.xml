@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 WitAqua
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- WitAquaMagic -->
+    <string name="witaqua_dashboard_title">WitAquaMagic</string>
+
+    <!-- Categories -->
+    <string name="about_title">About</string>
+    <string name="about_summary">About WitAqua</string>
+
+    <!-- About -->
+    <string name="about_info">WitAqua is a custom Android ROM developed by Japanese Android enthusiasts. The primary goal of this ROM is to deliver a stock Android experience, free from unnecessary bloatware. It offers a clean, responsive system with a streamlined interface. While the ROM maintains the core features and simplicity of stock Android, it also includes several useful, carefully selected enhancements and additional features that improve usability and customization.</string>
+    <string name="about_website_title">Website</string>
+    <string name="about_website_summary">Feel free to drop by our website</string>
+    <string name="about_website_url">https://witaqua.org</string>
+    <string name="about_x_title">X</string>
+    <string name="about_x_summary">Come see our posts</string>
+    <string name="about_x_url" translatable="false">https://x.com/WitAquaROM</string>
+    <string name="about_discord_title">Discord</string>
+    <string name="about_discord_summary">Visit our community chat</string>
+    <string name="about_discord_url" translatable="false">https://discord.gg/Br2zts2V2J</string>
+    <string name="about_github_title">GitHub</string>
+    <string name="about_github_summary">Check out our GitHub</string>
+    <string name="about_github_url" translatable="false">https://github.com/WitAqua</string>
+    <string name="about_contributors_title">Our Team</string>
+    <string name="about_contributor_1_title" translatable="false">Toufu</string>
+    <string name="about_contributor_1_summary" translatable="false">Founder / Lead Developer</string>
+    <string name="about_contributor_1_url" translatable="false">https://github.com/toufune</string>
+    <string name="about_contributor_2_title" translatable="false">Maitani-Sakura</string>
+    <string name="about_contributor_2_summary" translatable="false">Co-Founder / Developer</string>
+    <string name="about_contributor_2_url" translatable="false">https://github.com/maitani-sakura</string>
+    <string name="about_contributor_3_title" translatable="false">soralis0912</string>
+    <string name="about_contributor_3_summary" translatable="false">Developer / Server Manager</string>
+    <string name="about_contributor_3_url" translatable="false">https://github.com/soralis0912</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right" translatable="false">→</string>
+    <string name="arrow_down" translatable="false">↓</string>
+    <string name="hex" translatable="false">Hex:</string>
+    <string name="hex_hint" translatable="false">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">by default</string>
+    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
+    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
+    <string name="edit_device_name_title">Edit Device Name</string>
+    <string name="maintainer_name" translatable="false"></string>
+    <string name="ok">OK</string>
+</resources>
