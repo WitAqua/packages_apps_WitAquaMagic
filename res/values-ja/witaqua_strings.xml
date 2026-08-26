@@ -13,7 +13,6 @@
     <string name="about_summary">WitAqua について</string>
 
     <!-- About -->
-    <string name="about_info">WitAqua は、日本の Android 愛好家によって開発された Android カスタム ROM です。この ROM の主な目的は、不要なブロートウェアのないストック Android エクスペリエンスを提供することです。クリーンでレスポンシブなシステムと合理化されたインターフェースを提供します。この ROM はストック Android の主要機能とシンプルさを維持しながら、使いやすさとカスタマイズ性を向上させる、慎重に選択された有用な拡張機能と追加機能も含んでいます。</string>
     <string name="about_website_title">ホームページ</string>
     <string name="about_website_summary">WitAqua のホームページに移動します</string>
     <string name="about_website_url">https://witaqua.org/ja</string>
