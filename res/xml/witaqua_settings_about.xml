@@ -86,4 +86,21 @@
             android:data="@string/about_contributor_3_url" />
     </Preference>
 
+    <!-- Contributor 4 -->
+    <Preference
+        android:title="@string/about_contributor_4_title"
+        android:summary="@string/about_contributor_4_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="@string/about_contributor_4_url" />
+    </Preference>
+
+    <!-- Contributor 5 -->
+    <Preference
+        android:title="@string/about_contributor_5_title"
+        android:summary="@string/about_contributor_5_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="@string/about_contributor_5_url" />
+    </Preference>
 </PreferenceScreen>

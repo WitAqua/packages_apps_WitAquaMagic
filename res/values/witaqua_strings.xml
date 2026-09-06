@@ -39,6 +39,12 @@
     <string name="about_contributor_3_title" translatable="false">soralis0912</string>
     <string name="about_contributor_3_summary" translatable="false">Developer / Server Manager</string>
     <string name="about_contributor_3_url" translatable="false">https://github.com/soralis0912</string>
+    <string name="about_contributor_4_title" translatable="false">misakazip</string>
+    <string name="about_contributor_4_summary" translatable="false">Developer</string>
+    <string name="about_contributor_4_url" translatable="false">https://github.com/misakazip</string>
+    <string name="about_contributor_5_title" translatable="false">kailua</string>
+    <string name="about_contributor_5_summary" translatable="false">Developer</string>
+    <string name="about_contributor_5_url" translatable="false">https://github.com/nattolecats</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
