@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 WitAqua
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- Thin round-capped chevron (~4.5dp x 9dp, 1.8dp stroke) inside a 24dp box. -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:autoMirrored="true"
+    android:tint="@color/preference_chevron_color_customized">
+    <path
+        android:pathData="M10,7.5 L14.5,12 L10,16.5"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000" />
+</vector>

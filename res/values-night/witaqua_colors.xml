@@ -7,4 +7,28 @@
     <color name="ic_device_name_storage_center_color">@android:color/system_accent1_900</color>
     <color name="ic_device_name_storage_outer_color">@android:color/system_accent1_200</color>
     <color name="ic_device_name_storage_rectangle_color">@android:color/system_accent3_200</color>
+
+    <!-- Homepage icons (dark): tone 80 of the AOSP palette with 75% chroma -->
+    <color name="witaqua_homepage_blue_variant_bg">#89d1f1</color>
+    <color name="witaqua_homepage_blue_bg">#adc8f1</color>
+    <color name="witaqua_homepage_pink_bg">#f2b5dd</color>
+    <color name="witaqua_homepage_orange_bg">#f3ba94</color>
+    <color name="witaqua_homepage_yellow_bg">#f4bf4f</color>
+    <color name="witaqua_homepage_green_bg">#95d698</color>
+    <color name="witaqua_homepage_grey_bg">#c7c7c7</color>
+    <color name="witaqua_homepage_cyan_bg">#84d2e8</color>
+    <color name="witaqua_homepage_red_bg">#f2b8b4</color>
+    <color name="witaqua_homepage_purple_bg">#d5bdef</color>
+
+    <!-- Overrides Settings res/values-night/colors.xml -->
+    <color name="homepage_blue_variant_bg">@color/witaqua_homepage_blue_variant_bg</color>
+    <color name="homepage_blue_bg">@color/witaqua_homepage_blue_bg</color>
+    <color name="homepage_pink_bg">@color/witaqua_homepage_pink_bg</color>
+    <color name="homepage_orange_bg">@color/witaqua_homepage_orange_bg</color>
+    <color name="homepage_yellow_bg">@color/witaqua_homepage_yellow_bg</color>
+    <color name="homepage_green_bg">@color/witaqua_homepage_green_bg</color>
+    <color name="homepage_grey_bg">@color/witaqua_homepage_grey_bg</color>
+    <color name="homepage_cyan_bg">@color/witaqua_homepage_cyan_bg</color>
+    <color name="homepage_red_bg">@color/witaqua_homepage_red_bg</color>
+    <color name="homepage_purple_bg">@color/witaqua_homepage_purple_bg</color>
 </resources>
