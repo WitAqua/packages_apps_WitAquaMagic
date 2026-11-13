@@ -7,4 +7,16 @@
     <color name="ic_device_name_storage_center_color">@android:color/system_accent1_900</color>
     <color name="ic_device_name_storage_outer_color">@android:color/system_accent1_200</color>
     <color name="ic_device_name_storage_rectangle_color">@android:color/system_accent3_200</color>
+
+    <!-- Overrides Settings res/values-night/colors.xml: same as light theme -->
+    <color name="homepage_blue_variant_bg">@color/witaqua_homepage_blue_variant_bg</color>
+    <color name="homepage_blue_bg">@color/witaqua_homepage_blue_bg</color>
+    <color name="homepage_pink_bg">@color/witaqua_homepage_pink_bg</color>
+    <color name="homepage_orange_bg">@color/witaqua_homepage_orange_bg</color>
+    <color name="homepage_yellow_bg">@color/witaqua_homepage_yellow_bg</color>
+    <color name="homepage_green_bg">@color/witaqua_homepage_green_bg</color>
+    <color name="homepage_grey_bg">@color/witaqua_homepage_grey_bg</color>
+    <color name="homepage_cyan_bg">@color/witaqua_homepage_cyan_bg</color>
+    <color name="homepage_red_bg">@color/witaqua_homepage_red_bg</color>
+    <color name="homepage_purple_bg">@color/witaqua_homepage_purple_bg</color>
 </resources>

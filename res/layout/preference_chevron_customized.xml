@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 WitAqua
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- Trailing "›" for preferences that open another page. -->
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preference_chevron_customized"
+    android:layout_width="@dimen/preference_chevron_size_customized"
+    android:layout_height="@dimen/preference_chevron_size_customized"
+    android:layout_gravity="end|center_vertical"
+    android:importantForAccessibility="no"
+    android:scaleType="centerInside"
+    android:src="@drawable/ic_preference_chevron_customized" />

@@ -8,4 +8,9 @@
 
     <!-- Oval preview size -->
     <dimen name="oval_notification_size">26dp</dimen>
+
+    <!-- Trailing chevron for preferences that open another page -->
+    <dimen name="preference_chevron_size_customized">24dp</dimen>
+    <!-- Homepage rows have no end padding, so inset the chevron like on sub pages -->
+    <dimen name="homepage_chevron_margin_end_customized">12dp</dimen>
 </resources>

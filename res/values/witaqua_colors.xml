@@ -7,4 +7,50 @@
     <color name="ic_device_name_storage_center_color">@android:color/system_accent1_100</color>
     <color name="ic_device_name_storage_outer_color">@android:color/system_accent1_500</color>
     <color name="ic_device_name_storage_rectangle_color">@android:color/system_accent3_500</color>
+
+    <!-- Homepage icons: tone 80 background / tone 10 foreground from the M3 palette,
+         the same in light and dark theme. The vivid yellow, cyan, blue variant and green
+         are toned down to a calmer chroma. -->
+    <color name="witaqua_homepage_blue_variant_bg">#85d0f2</color>
+    <color name="witaqua_homepage_blue_variant_fg">#001f2d</color>
+    <color name="witaqua_homepage_blue_bg">#a1c9ff</color>
+    <color name="witaqua_homepage_blue_fg">#001944</color>
+    <color name="witaqua_homepage_pink_bg">#ffaee4</color>
+    <color name="witaqua_homepage_pink_fg">#3d0023</color>
+    <color name="witaqua_homepage_orange_bg">#ffb683</color>
+    <color name="witaqua_homepage_orange_fg">#321200</color>
+    <color name="witaqua_homepage_yellow_bg">#eac072</color>
+    <color name="witaqua_homepage_yellow_fg">#2f1400</color>
+    <color name="witaqua_homepage_green_bg">#8dd892</color>
+    <color name="witaqua_homepage_green_fg">#002110</color>
+    <color name="witaqua_homepage_grey_bg">#c7c7c7</color>
+    <color name="witaqua_homepage_grey_fg">#1b1b1c</color>
+    <color name="witaqua_homepage_cyan_bg">#7dd3eb</color>
+    <color name="witaqua_homepage_cyan_fg">#001f26</color>
+    <color name="witaqua_homepage_red_bg">#ffb3ae</color>
+    <color name="witaqua_homepage_red_fg">#3a0907</color>
+    <color name="witaqua_homepage_purple_bg">#d9bafd</color>
+    <color name="witaqua_homepage_purple_fg">#280255</color>
+
+    <!-- Overrides Settings res/values/colors.xml -->
+    <color name="homepage_blue_variant_fg">@color/witaqua_homepage_blue_variant_fg</color>
+    <color name="homepage_blue_variant_bg">@color/witaqua_homepage_blue_variant_bg</color>
+    <color name="homepage_blue_fg">@color/witaqua_homepage_blue_fg</color>
+    <color name="homepage_blue_bg">@color/witaqua_homepage_blue_bg</color>
+    <color name="homepage_pink_fg">@color/witaqua_homepage_pink_fg</color>
+    <color name="homepage_pink_bg">@color/witaqua_homepage_pink_bg</color>
+    <color name="homepage_orange_fg">@color/witaqua_homepage_orange_fg</color>
+    <color name="homepage_orange_bg">@color/witaqua_homepage_orange_bg</color>
+    <color name="homepage_yellow_fg">@color/witaqua_homepage_yellow_fg</color>
+    <color name="homepage_yellow_bg">@color/witaqua_homepage_yellow_bg</color>
+    <color name="homepage_green_fg">@color/witaqua_homepage_green_fg</color>
+    <color name="homepage_green_bg">@color/witaqua_homepage_green_bg</color>
+    <color name="homepage_grey_fg">@color/witaqua_homepage_grey_fg</color>
+    <color name="homepage_grey_bg">@color/witaqua_homepage_grey_bg</color>
+    <color name="homepage_cyan_fg">@color/witaqua_homepage_cyan_fg</color>
+    <color name="homepage_cyan_bg">@color/witaqua_homepage_cyan_bg</color>
+    <color name="homepage_red_fg">@color/witaqua_homepage_red_fg</color>
+    <color name="homepage_red_bg">@color/witaqua_homepage_red_bg</color>
+    <color name="homepage_purple_fg">@color/witaqua_homepage_purple_fg</color>
+    <color name="homepage_purple_bg">@color/witaqua_homepage_purple_bg</color>
 </resources>
